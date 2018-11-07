@@ -1,0 +1,4 @@
+<?php
+$lines =  [
+  'greeting' => 'Hi'
+];

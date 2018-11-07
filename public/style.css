@@ -1,6 +1,7 @@
 .dark-mode{
-  background-color: black;
+  background-color: hotpink;
   color: white;
+  transition: 0.5s ease;
 }
 .navbar-container{
   width: 100%;
@@ -20,6 +21,7 @@ body{
   margin: 0px;
   padding: 0px;
   height: 1000vh;
+
 }
 
 /*MODAL*/

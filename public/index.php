@@ -1,3 +1,11 @@
+<?php
+require (__DIR__.'/functions.php');
+if (isset($_GET['locale'])){
+  $locale = $_GET['locale'];
+  require (trans($locale));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +16,11 @@
   <title>Fast Security</title>
 </head>
 <body class="">
-
-<!-- MODAL -->
+  <!-- MODAL -->
   <div class="modal-background">
   </div>
   <div class="modal">
-    <h1>JOIN THE FUCKING NEWSLETTER</h1>
+    <h1><?= $lines['greeting'];?></h1>
   </div>
   <div style="height: 20vh;">
   </div>
@@ -25,11 +32,15 @@
       </div>
     </header>
   </div>
+  <center>
+    <h1 class="headline">This is a Headline</h1>
+  </center>
+  <form method="get">
 
-  <h1>This is a Headline</h1>
-  <button class"toggle-dark-mode">
-    DarkMode
+  <button type="submit" name="locale" value="sv">
+    Svenska
   </button>
+</form>
 
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
