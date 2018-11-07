@@ -3,6 +3,8 @@ require (__DIR__.'/functions.php');
 if (isset($_GET['locale'])){
   $locale = $_GET['locale'];
   require (trans($locale));
+}else{
+  require (__DIR__.'/lang/en.php');
 }
 ?>
 
@@ -16,15 +18,7 @@ if (isset($_GET['locale'])){
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Fast Security</title>
 </head>
-<body class="">
-  <!-- MODAL -->
-  <div class="modal-background">
-  </div>
-  <div class="modal">
-    <h1><?= $lines['greeting'];?></h1>
-  </div>
-  <div style="height: 20vh;">
-  </div>
+<body>
   <!-- NAV BAR-->
 <header>
   <nav class="topnav" id="myTopnav">
@@ -42,13 +36,15 @@ if (isset($_GET['locale'])){
 
 
   <center>
-    <h1 class="headline">This is a Headline</h1>
+    <h1 class="headline"><?= $lines['greeting'];?></h1>
   </center>
   <form method="get">
-
-  <button type="submit" name="locale" value="sv">
-    Svenska
-  </button>
+    <button type="submit" name="locale" value="sv">
+      Svenska
+    </button>
+    <button type="submit" name="locale" value="en">
+      English
+    </button>
 </form>
 
   <!--SCRIPT TAG-->
