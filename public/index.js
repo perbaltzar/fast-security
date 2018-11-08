@@ -51,8 +51,6 @@ modalBackground.addEventListener('click', () => {
 setTimeout(openModal, 3000);
 
 
-
-
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

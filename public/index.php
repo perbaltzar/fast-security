@@ -20,7 +20,7 @@ if (isset($_GET['locale'])){
 </head>
 <body>
   <!-- NAV BAR-->
-<header>
+<header  class="navbar-container">
   <nav class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#news">News</a>
