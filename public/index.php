@@ -57,11 +57,19 @@ if (isset($_GET['locale'])){
 <div class="first-hero">
   <img class="hero-img" src="/pictures/1.jpg">
 </div>
-<div class="first-hero">
-  <img class="hero-img" src="/pictures/2.jpg">
+<!--BETWEEN DIV-->
+<div class="between-div">
 </div>
-<div class="first-hero">
-  <img class="hero-img" src="/pictures/3.jpg">
+<!--SECOND HERO-->
+<div class="other-hero">
+  <img class="hero-img fade-in-img" src="/pictures/2.jpg">
+</div>
+<!--BETWEEN DIV-->
+<div class="between-div">
+</div>
+<!--THIRD HERO-->
+<div class="other-hero">
+  <img class="hero-img fade-in-img" src="/pictures/3.jpg">
 </div>
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
