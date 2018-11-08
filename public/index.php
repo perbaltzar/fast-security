@@ -31,13 +31,20 @@ if (isset($_GET['locale'])){
     </a>
   </nav>
 </header>
+<!-- NAV BAR FURTHER DOWN -->
+<div class="navbar-further-down">
+  <div class="navbar-further-down-logo">
+    THE LOGO
+  </div>
+  <div class="navbar-further-down-buttons">
+    <ul class="navbar-further-down-list">
+      <li>Catalogue</li>
+      <li>Newsletter</li>
+    </ul>
+  </div>
+</div>
 
-
-
-
-  <center>
-    <h1 class="headline"><?= $lines['greeting'];?></h1>
-  </center>
+  <!--LANGUAGE BUTTONS-->
   <form method="get">
     <button type="submit" name="locale" value="sv">
       Svenska
@@ -46,6 +53,13 @@ if (isset($_GET['locale'])){
       English
     </button>
 </form>
+<div class="first-hero">
+  <img class="hero-img" src="/pictures/1.jpg">
+
+</div>
+<center>
+  <h1 class="headline"><?= $lines['greeting'];?></h1>
+</center>
 
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
