@@ -2,8 +2,13 @@ body{
   margin: 0px;
   height: 4000px;
   background-color: black;
-}
+  font-family: "AktivGrotesk-Light";
 
+}
+*{
+  padding: 0;
+  margin: 0;
+}
 /* Styles for navbar */
 
 .topnav {
@@ -94,10 +99,34 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
 }
 .navbar-further-down-list{
   display: flex;
-  justify-content: space-around;
+  list-style: none;
+  justify-content: flex-end;
+  height: inherit;
 }
+.navbar-further-down-list li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  ttransition: all .5s ease;
+}
+.nav-space{
+  width: 8vw;
+}
+.navbar-further-down-list li:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
 .navbar-further-down-buttons{
-  width: 30%;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+
 }
 .navbar-further-down-logo{
   padding-left: 2vw;
@@ -125,11 +154,19 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
 }
 /*FADE OUT AND FADE IN*/
 
+.first-hero::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  margin-top: 80vh;
+  height: 20vh;
+  width: 100%;
+  content: '';
+}
 .other-hero::before {
   display: block;
   position: absolute;
   background-image: linear-gradient(to top, transparent 0%, black 100%);
-  z-index: 1;
   margin-bottom: -20vh;
   height: 20vh;
   width: 100%;
@@ -137,18 +174,9 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
 }
 .other-hero::after {
   display: block;
-  position: relative;
+  position: absolute;
   background-image: linear-gradient(to bottom, transparent 0%, black 100%);
-  margin-top: -20vh;
-  height: 20vh;
-  width: 100%;
-  content: '';
-}
-.first-hero::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, transparent 0%, black 100%);
-  margin-top: -20vh;
+  margin-top: 80vh;
   height: 20vh;
   width: 100%;
   content: '';
@@ -157,7 +185,6 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
   display: block;
   position: absolute;
   background-image: linear-gradient(to top, transparent 0%, black 100%);
-  z-index: 1;
   margin-bottom: -20vh;
   height: 20vh;
   width: 100%;
@@ -167,8 +194,7 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
   display: block;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent 0%, black 100%);
-  z-index: 1;
-  margin-top: -20vh;
+  margin-top: 80vh;
   height: 20vh;
   width: 100%;
   content: '';
@@ -184,3 +210,32 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
   opacity: 1;
   z-index: 0;
 }
+.img-1{
+  background: url('pictures/1.jpg');
+}
+.img-2{
+  background: url('pictures/2.jpg')
+}
+.img-3{
+  background: url('pictures/3.jpg')
+}
+.hero-img{
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Different size of pictures with smaller screen */
+@media screen and (max-width: 600px) {
+  .hero-img{
+    height: 70vh;
+  }
+  .first-hero::after {
+    margin-top: 50vh;
+  }
+  .other-hero::after {
+    margin-top: 50vh;
+  }
+  .last-hero::after {
+    margin-top: 50vh;
+  }

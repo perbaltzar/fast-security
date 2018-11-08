@@ -1,4 +1,6 @@
 <?php
 $lines =  [
-  'greeting' => 'Hej'
+  'greeting' => 'Hej',
+  'newsletter' => 'Nyhetsbrev',
+  'catalogue' => 'Katalog'
 ];

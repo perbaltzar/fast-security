@@ -38,9 +38,11 @@ if (isset($_GET['locale'])){
   </div>
   <div class="navbar-further-down-buttons">
     <ul class="navbar-further-down-list">
-      <li>Catalogue</li>
-      <li>Newsletter</li>
+      <li><?= strtoupper($lines['newsletter']);?></li>
+      <li><?= strtoupper($lines['catalogue']);?></li>
     </ul>
+    <div class="nav-space">
+    </div>
   </div>
 </div>
 
@@ -54,22 +56,24 @@ if (isset($_GET['locale'])){
     </button>
 </form>
 <!--FIRST HERO-->
-<div class="first-hero fade-in-img">
-  <img class="hero-img" src="/pictures/1.jpg">
+<div class="first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
 </div>
+
 <!--BETWEEN DIV-->
 <div class="between-div">
 </div>
+
 <!--SECOND HERO-->
-<div class="other-hero">
-  <img class="hero-img fade-in-img" src="/pictures/2.jpg">
+<div class="other-hero hero-img fade-in-img img-2">
+  <!-- <img class="hero-img fade-in-img" src="/pictures/2.jpg"> -->
 </div>
+
 <!--BETWEEN DIV-->
 <div class="between-div">
 </div>
 <!--THIRD HERO-->
-<div class="last-hero">
-  <img class="hero-img fade-in-img" src="/pictures/3.jpg">
+<div class="last-hero fade-in-img hero-img img-3">
+  <!-- <img class="hero-img fade-in-img" src="/pictures/3.jpg"> -->
 </div>
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
