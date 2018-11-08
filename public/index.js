@@ -35,12 +35,29 @@ window.addEventListener('scroll', () => {
 // function to add responsive class to navbar
 function addClass() {
     const x = document.getElementById("myTopnav");
+    // const y = document.getElementByClass("invisible");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
+    // if (y.className === "invisible") {
+    //     y.className += " visible";
+    // } else {
+    //     y.className = "invisible";
+    // }
 }
+
+// function to add visible class to second 'navbar'
+function addClass2() {
+    const y = document.getElementById("invisible");
+    if (y.className === "invisible") {
+        y.className = "visible";
+    } else {
+        y.className = "invisible";
+    }
+}
+
 
 //Fading in images as you scroll.
 const fadeInIMGs = document.querySelectorAll('.fade-in-img');

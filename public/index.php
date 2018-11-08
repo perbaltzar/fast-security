@@ -21,12 +21,14 @@ if (isset($_GET['locale'])){
 <body>
   <!-- NAV BAR-->
 <header class="navbar-container">
+  <div class="invisible" id="invisible">
+  </div>
   <nav class="topnav" id="myTopnav">
     <a href="#home">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="addClass()">
+    <a href="javascript:void(0);" class="icon" onclick="addClass(), addClass2()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>

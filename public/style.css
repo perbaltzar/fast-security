@@ -11,6 +11,11 @@ body{
 }
 /* Styles for navbar */
 
+/* .navbar-container {
+    background-color: #333;
+    overflow: hidden;
+} */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -35,6 +40,10 @@ body{
     display: none;
 }
 
+.invisible {
+  display: none;
+}
+
 /* Styles that appear when screen is 600px wide at most;
 Meant to make navbar options 'disappear' and make (burger) icon appear */
 @media screen and (max-width: 600px) {
@@ -52,7 +61,6 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
   }
   .navbar-container {
     position: relative;
-    top: 0px;
     width: 100%;
   }
 }
@@ -74,6 +82,11 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
     float: none;
     display: block;
     text-align: left;
+  }
+  .visible {
+    background-color: #333;
+    height: 7.9vh;
+    overflow: hidden;
   }
 }
 /*END OF NAVBAR*/
