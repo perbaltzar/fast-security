@@ -32,8 +32,9 @@ window.addEventListener('scroll', () => {
 //setTimeout(openModal, 3000);
 
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
+// function to add responsive class to navbar
+function addClass() {
+    const x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
