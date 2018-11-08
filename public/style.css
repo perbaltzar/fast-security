@@ -70,3 +70,41 @@ Meant to make navbar options 'disappear' and make (burger) icon appear */
     text-align: left;
   }
 }
+/*END OF NAVBAR*/
+
+/*NAVBAR FURTHER DOWN*/
+.navbar-further-down{
+  width: 100%;
+  height: 6vh;
+  background-color: black;
+  color: white;
+  display: none;
+  top: 0px;
+  opacity: 0;
+  transition: 1s ease;
+}
+.navbar-visible{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  opacity: 1;
+  transition: 1s ease;
+
+}
+.navbar-further-down-list{
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-further-down-buttons{
+  width: 30%;
+}
+.navbar-further-down-logo{
+  padding-left: 2vw;
+}
+
+/*HERO PICTURES*/
+.hero-img{
+  width: 100%;
+  height: auto;
+}
