@@ -20,13 +20,13 @@ if (isset($_GET['locale'])){
 </head>
 <body>
   <!-- NAV BAR-->
-<header  class="navbar-container">
+<header class="navbar-container">
   <nav class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
+    <a href="#home">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="addClass()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
