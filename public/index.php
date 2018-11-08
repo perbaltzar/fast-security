@@ -54,7 +54,7 @@ if (isset($_GET['locale'])){
     </button>
 </form>
 <!--FIRST HERO-->
-<div class="first-hero">
+<div class="first-hero fade-in-img">
   <img class="hero-img" src="/pictures/1.jpg">
 </div>
 <!--BETWEEN DIV-->
@@ -68,7 +68,7 @@ if (isset($_GET['locale'])){
 <div class="between-div">
 </div>
 <!--THIRD HERO-->
-<div class="other-hero">
+<div class="last-hero">
   <img class="hero-img fade-in-img" src="/pictures/3.jpg">
 </div>
   <!--SCRIPT TAG-->

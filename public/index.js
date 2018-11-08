@@ -6,12 +6,12 @@ const modal = document.querySelector('.modal');
 const modalBackground = document.querySelector('.modal-background');
 const headline = document.querySelector('.headline');
 const navbarFurtherDown = document.querySelector('.navbar-further-down')
+const navbarAppearY = document.querySelector('.other-hero');
 
 
 //Navbar further down appearing
 window.addEventListener('scroll', () => {
-  //console.log(window.pageYOffset);
-  if (window.pageYOffset >= 1000) { //maybe chosing picture 2 or something like that
+  if (window.pageYOffset >= navbarAppearY.offsetTop) { //maybe chosing picture 2 or something like that
     navbarFurtherDown.classList.add("navbar-visible")
   } else {
     navbarFurtherDown.classList.remove("navbar-visible");
@@ -43,25 +43,36 @@ function addClass() {
 }
 
 //Fading in images as you scroll.
-const fadeInIMGs = document.querySelector('.fade-in-img');
+const fadeInIMGs = document.querySelectorAll('.fade-in-img');
 let fadeInIMGY = 0;
+let fadeInOpacity = 0;
+
 
 window.addEventListener('scroll', () => {
+  Array.from(fadeInIMGs) .forEach((fadeInIMG) => {
+  fadeInIMGY = fadeInIMG.offsetTop
+  let startFadeValue = fadeInIMGY-window.pageYOffset;
+    if (window.pageYOffset >= fadeInIMGY-startFadeValue){
+      fadeInOpacity =  (900-(fadeInIMGY-window.pageYOffset))/900;
+      fadeInOpacity = Math.round(fadeInOpacity*1000)/1000;
+    }
+    if (startFadeValue <  -200){
+      fadeInOpacity =  (900-(fadeInIMGY-window.pageYOffset))/700;
+      fadeInOpacity = Math.round(fadeInOpacity*1000)/1000;
+      fadeInOpacity = 2.6-fadeInOpacity;
+    }
+    if (fadeInOpacity < 0){
+      fadeInOpacity = 0;
+    }
+    if (fadeInOpacity >= 0 && fadeInOpacity <= 1){
+      fadeInIMG.style.opacity = fadeInOpacity;
+    }
+  })
 
 
 });
 
 
 // Array.from(fadeInIMGs).forEach((fadeInIMG) => {
-//   fadeInIMGY = fadeInIMG.offsetTop
-//   if (window.pageYOffset >= fadeInIMGY-900){
 //
-//     let fadeInOpacity =  (2*(900-(fadeInIMGY-window.pageYOffset))/900)
-//     fadeInOpacity = Math.round(fadeInOpacity*10)/10;
-//     if (fadeInOpacity <= 1){
-//       console.log('hej');
-//       fadeInOpacity = 1;
-//       fadeInIMG.style.opacity = fadeInOpacity;
-//     }
-//   }
 // });
