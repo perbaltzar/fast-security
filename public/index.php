@@ -53,14 +53,24 @@ if (isset($_GET['locale'])){
       English
     </button>
 </form>
+<!--FIRST HERO-->
 <div class="first-hero">
   <img class="hero-img" src="/pictures/1.jpg">
-
 </div>
-<center>
-  <h1 class="headline"><?= $lines['greeting'];?></h1>
-</center>
-
+<!--BETWEEN DIV-->
+<div class="between-div">
+</div>
+<!--SECOND HERO-->
+<div class="other-hero">
+  <img class="hero-img fade-in-img" src="/pictures/2.jpg">
+</div>
+<!--BETWEEN DIV-->
+<div class="between-div">
+</div>
+<!--THIRD HERO-->
+<div class="other-hero">
+  <img class="hero-img fade-in-img" src="/pictures/3.jpg">
+</div>
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
 
