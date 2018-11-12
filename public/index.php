@@ -20,34 +20,20 @@ if (isset($_GET['locale'])){
 </head>
 <body>
   <!-- NAV BAR-->
-<header class="navbar-container">
-  <div class="invisible" id="invisible">
-  </div>
-  <nav class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="addClass(), addClass2()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-</header>
-<!-- NAV BAR FURTHER DOWN -->
-<div class="navbar-further-down">
-  <div class="navbar-further-down-logo">
-    THE LOGO
-  </div>
-  <div class="navbar-further-down-buttons">
-    <ul class="navbar-further-down-list">
-      <li><?= strtoupper($lines['newsletter']);?></li>
-      <li><?= strtoupper($lines['catalogue']);?></li>
-    </ul>
-    <div class="nav-space">
+  <header class="navbar-container">
+    <div class="invisible" id="invisible">
     </div>
-  </div>
-</div>
+    <nav class="topnav" id="myTopnav">
 
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="addClass(), addClass2()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
   <!--LANGUAGE BUTTONS-->
   <form method="get">
     <button type="submit" name="locale" value="sv">
@@ -56,27 +42,71 @@ if (isset($_GET['locale'])){
     <button type="submit" name="locale" value="en">
       English
     </button>
-</form>
-<!--FIRST HERO-->
-<div class="first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
-</div>
+  </form>
+  <!-- NAV BAR FURTHER DOWN -->
+  <div class="navbar-further-down">
+    <div class="navbar-further-down-logo">
+      THE LOGO
+    </div>
+    <div class="navbar-further-down-buttons">
+      <ul class="navbar-further-down-list">
+        <li><?= strtoupper($lines['newsletter']);?></li>
+        <li><?= strtoupper($lines['catalogue']);?></li>
+      </ul>
+      <div class="nav-space">
+      </div>
+    </div>
+  </div>
 
-<!--BETWEEN DIV-->
-<div class="between-div">
-</div>
 
-<!--SECOND HERO-->
-<div class="other-hero hero-img fade-in-img img-2">
-  <!-- <img class="hero-img fade-in-img" src="/pictures/2.jpg"> -->
-</div>
-
-<!--BETWEEN DIV-->
-<div class="between-div">
-</div>
-<!--THIRD HERO-->
-<div class="last-hero fade-in-img hero-img img-3">
-  <!-- <img class="hero-img fade-in-img" src="/pictures/3.jpg"> -->
-</div>
+  <!--FIRST HERO-->
+  <div class="first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
+    <div class="hero-text to-fade fade-in">
+      <?=nl2br($lines['hero1headline']);?>
+    </div>
+    <div class="hero-text-desktop to-fade">
+      <?=nl2br($lines['hero1paragraph']);?>
+    </div>
+  </div>
+  <!--BETWEEN DIV-->
+  <div class="between-div">
+    <div class="hero-text-mobile to-fade">
+      <?=nl2br($lines['hero1paragraph']);?>
+    </div>
+  </div>
+  <!--SECOND HERO-->
+  <div class="other-hero hero-img fade-in-img img-2">
+    <div class="hero-text to-fade">
+      <?=nl2br($lines['hero1headline']);?>
+    </div>
+    <div class="hero-text-desktop to-fade">
+      <?=nl2br($lines['hero1paragraph']);?>
+    </div>
+  </div>
+  <!--BETWEEN DIV-->
+  <div class="between-div">
+    <div class="between-div">
+      <div class="hero-text-mobile to-fade">
+        <?=nl2br($lines['hero1paragraph']);?>
+      </div>
+    </div>
+  </div>
+  <!--THIRD HERO-->
+  <div class="last-hero fade-in-img hero-img img-3">
+    <div class="hero-text to-fade">
+      <?=nl2br($lines['hero1headline']);?>
+    </div>
+    <div class="hero-text-desktop to-fade">
+      <?=nl2br($lines['hero1paragraph']);?>
+    </div>
+  </div>
+  <div class="between-div">
+    <div class="between-div">
+      <div class="hero-text-mobile to-fade">
+        <?=nl2br($lines['hero1paragraph']);?>
+      </div>
+    </div>
+  </div>
   <!--SCRIPT TAG-->
   <script type="text/javascript" src=index.js>
 

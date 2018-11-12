@@ -88,8 +88,35 @@ window.addEventListener('scroll', () => {
 
 
 });
+// Fade in TEXT
 
+const toFades = document.querySelectorAll('.to-fade');
 
-// Array.from(fadeInIMGs).forEach((fadeInIMG) => {
+window.addEventListener('scroll', () => {
+  Array.from(toFades) .forEach((toFade) => {
+    if (toFade.offsetTop-window.pageYOffset < 500  && toFade.offsetTop-window.pageYOffset > 20){
+      toFade.classList.add("fade-in")
+    }else{
+      toFade.classList.remove("fade-in")
+    }
+  });
+});
+
+//Failed the scrolling to next hero function
 //
+// const heroIMGs = document.querySelectorAll('.hero-img');
+// // Scrolling down to next position functions
+// window.addEventListener('scroll', () => {
+//   Array.from(heroIMGs).forEach((heroIMG) => {
+//     let distanceY = window.pageYOffset-heroIMG.offsetTop;
+//     console.log(distanceY);
+//     if (distanceY > -200 && distanceY < 0){
+//       if (distanceY < 0){
+//         while (distanceY < 0){
+//           distanceY++;
+//           window.pageYOffset = distanceY;
+//         }
+//       }
+//     }
+//   });
 // });
