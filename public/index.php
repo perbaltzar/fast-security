@@ -24,7 +24,6 @@ if (isset($_GET['locale'])){
     <div class="invisible" id="invisible">
     </div>
     <nav class="topnav" id="myTopnav">
-
       <a href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
@@ -60,7 +59,7 @@ if (isset($_GET['locale'])){
 
 
   <!--FIRST HERO-->
-  <div class="first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
+  <div class="heroes first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
     <div class="hero-text to-fade fade-in">
       <?=nl2br($lines['hero1headline']);?>
     </div>
@@ -75,7 +74,7 @@ if (isset($_GET['locale'])){
     </div>
   </div>
   <!--SECOND HERO-->
-  <div class="other-hero hero-img fade-in-img img-2">
+  <div class="heroes other-hero hero-img fade-in-img img-2">
     <div class="hero-text to-fade">
       <?=nl2br($lines['hero1headline']);?>
     </div>
@@ -92,7 +91,7 @@ if (isset($_GET['locale'])){
     </div>
   </div>
   <!--THIRD HERO-->
-  <div class="last-hero fade-in-img hero-img img-3">
+  <div class="heroes last-hero fade-in-img hero-img img-3">
     <div class="hero-text to-fade">
       <?=nl2br($lines['hero1headline']);?>
     </div>
