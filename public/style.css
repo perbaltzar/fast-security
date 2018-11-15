@@ -217,7 +217,7 @@ button{
 /* Different size of pictures with smaller screen */
 @media screen and (max-width: 600px) {
   .hero-img{
-    height: 70vh;
+    height: 100vh;
   }
   .between-div{
     height: 30vh;
