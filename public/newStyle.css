@@ -1,0 +1,227 @@
+*{
+  /* border: 2px solid white; */
+  margin: 0px;
+  padding: 0px;
+  color: white;
+
+}
+.first-hero{
+  background: url('pictures/2.jpg');
+}
+.second-hero{
+  background: url('pictures/1.jpg');
+}
+.third-hero{
+  background: url('pictures/dark-studio-front.jpg');
+}
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-headline{
+  /* width: 60vw; */
+  font-family: "AktivGrotesk-Bold";
+  font-size: 106px;
+  letter-spacing: 0.18px;
+  line-height: 34px;
+  /* padding-left: 25vh; */
+}
+.hero-headline p{
+  margin-top: 53px;
+  font-family: "AktivGrotesk-Regular";
+  font-size: 50px;
+  width: 60vw;
+  text-align: left;
+}
+body{
+  border: 2px dashed transparent;
+  background-color: #1A1A24;
+}
+/*FADING THE IMG*/
+.first-hero::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent 0%, #1A1A24 100%);
+  margin-top: 269px;
+  height: 408px;
+  width: 100vw;
+  content: '';
+}
+/*FAKE NAV-BAR*/
+.navbar-logo{
+  width: 152px;
+  height: auto;
+  grid-column: 2 / 2;
+  grid-row: 1;
+
+}
+
+.main-navbar{
+  height: 113px;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.burger{
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  /* background-color: transparent; */
+}
+.navbar-container{
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 70px 152px 4fr 1fr 1fr 1fr 1fr 50px;
+}
+.burger-container{
+  grid-column: 8;
+  grid-row: 1;
+  display: none;
+}
+.contact{
+  grid-column: 4;
+}
+.newsletter{
+  grid-column: 5;
+}
+.brochure{
+  grid-column: 6;
+}
+.nav-item{
+  font-size: 22px;
+  font-family: "AktivGrotesk-Light";
+  letter-spacing: 1.39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.between-div{
+  height: 607px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.between-div p{
+  margin-bottom: 26px;
+  	width: 750px;
+  	font-family: AktivGrotesk-Light;
+  	font-size: 22px;
+  	letter-spacing: 2.21px;
+  	line-height: 32px;
+  	text-align: center;
+}
+.between-div h5{
+	height: 154px;
+	width: 663px;
+	font-family: AktivGrotesk-Bold;
+	font-size: 76px;
+	letter-spacing: 0.82px;
+	line-height: 77px;
+	text-align: center;
+  margin-bottom: 57px;
+}
+
+.side-by-side{
+  width: 50vw;
+  height: 50vw;
+  background-color: hotpink;
+  border: 1px blue solid;
+}
+.two-pictures{
+  display: flex;
+}
+.footer{
+  height: 100vh;
+  /* border: 1px white solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: AktivGrotesk-Light;
+  font-size: 26px;
+  letter-spacing: 2.11px;
+}
+.newsletter-brochure{
+  width: 342px;
+  text-align: center;
+}
+.newsletter-brochure p{
+ margin-bottom: 8px;
+}
+.inputfield{
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-brochure input{
+  width: 280px;
+  height: 35px;
+  background-color: transparent;
+  font-size: 26px;
+  font-family: AktivGrotesk-Light;
+  border: 1px solid white;
+}
+
+.newsletter{
+  width: 60px;
+  height: 37px;
+  border: 0px;
+  background-color: #00205a;
+  border: 1px solid white;
+  border-left: 0px;
+}
+
+.brochure{
+  background: transparent;
+  height: 35px;
+  width: 342px;
+  font-size: 20px;
+  font-family: AktivGrotesk-Light;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 1.96px;
+}
+
+.footer-logo img{
+  margin: 104px;
+  width: 374px;
+}
+.footer-buttons{
+  display: flex;
+  justify-content: center;
+}
+.footer-button{
+  padding:   0px 40px;
+}
+.footer-line{
+  width: 980px;
+  margin-top: 47px;
+}
+.social-media{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.social-media img{
+  margin: 0px 30px 43px 30px;
+}
+.footer-copywrite {
+	height: 17px;
+	width: 180px;
+	font-family: AktivGrotesk-Light;
+	font-size: 16px;
+	letter-spacing: 1.73px;
+	line-height: 18px;
+}
+/* height: 31px;	width: 338px;	color: #FFFFFF;				line-height: 30px;	text-align: center; */
