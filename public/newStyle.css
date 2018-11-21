@@ -1,3 +1,4 @@
+
 *{
   /* border: 2px solid white; */
   margin: 0px;
@@ -30,7 +31,6 @@
   font-size: 106px;
   letter-spacing: 0.18px;
   line-height: 34px;
-  /* padding-left: 25vh; */
 }
 .hero-headline p{
   margin-top: 53px;
@@ -59,11 +59,10 @@ body{
   height: auto;
   grid-column: 2 / 2;
   grid-row: 1;
-
 }
 
 .main-navbar{
-  height: 113px;
+  height: 10vh;
   width: 100vw;
   position: absolute;
   display: flex;
@@ -72,7 +71,7 @@ body{
 .burger{
   width: 35px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin: 6px 0;
   /* background-color: transparent; */
 }
@@ -80,20 +79,22 @@ body{
   width: 100vw;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 70px 152px 4fr 1fr 1fr 1fr 1fr 50px;
+  grid-template-columns: 70px 152px 3fr 1fr 1fr 1fr 1fr 60px;
 }
 .burger-container{
   grid-column: 8;
   grid-row: 1;
+}
+.burger{
   display: none;
 }
-.contact{
+.nav-contact{
   grid-column: 4;
 }
-.newsletter{
+.nav-newsletter{
   grid-column: 5;
 }
-.brochure{
+.nav-brochure{
   grid-column: 6;
 }
 .nav-item{
@@ -103,39 +104,45 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: inline-block;
+  margin-left: 40px;
+}
+.burger-container{
+  display:none;
 }
 .between-div{
-  height: 607px;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
 }
 .between-div p{
-  margin-bottom: 26px;
-  	width: 750px;
-  	font-family: AktivGrotesk-Light;
-  	font-size: 22px;
-  	letter-spacing: 2.21px;
-  	line-height: 32px;
-  	text-align: center;
+  margin-bottom: 4vh;
+	/* width: 1px; */
+	font-family: AktivGrotesk-Light;
+	font-size: 3vh;
+	letter-spacing: 2.21px;
+	line-height: 32px;
+	text-align: center;
+  width: 68vw;
 }
 .between-div h5{
-	height: 154px;
-	width: 663px;
+	height: 13vh;
+	/* width: 663px; */
 	font-family: AktivGrotesk-Bold;
-	font-size: 76px;
+	font-size: 7vh;
 	letter-spacing: 0.82px;
-	line-height: 77px;
+	/* line-height: 77px; */
 	text-align: center;
-  margin-bottom: 57px;
+  margin-bottom: 0vh;
 }
 
 .side-by-side{
   width: 50vw;
   height: 50vw;
-  background-color: hotpink;
-  border: 1px blue solid;
+  background-color: darkgrey;
+  border: 1px white solid;
 }
 .two-pictures{
   display: flex;
@@ -203,10 +210,13 @@ body{
 }
 .footer-button{
   padding:   0px 40px;
+  border-left: 1px solid white;
 }
 .footer-line{
   width: 980px;
   margin-top: 47px;
+  border-top: 1px solid white;
+
 }
 .social-media{
   margin-top: 60px;
@@ -224,4 +234,8 @@ body{
 	letter-spacing: 1.73px;
 	line-height: 18px;
 }
+  .footer-contact{
+    border: 0px;
+  }
+
 /* height: 31px;	width: 338px;	color: #FFFFFF;				line-height: 30px;	text-align: center; */

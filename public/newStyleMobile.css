@@ -1,0 +1,175 @@
+@media only screen and (max-width: 1000px) {
+  body{
+    /* background-color: blue; */
+  }
+  .burger-container{
+    grid-column: 8;
+    grid-row: 2;
+    display: block;
+  }
+  .burger{
+    display: block;
+  }
+  .nav-item{
+    display: none;
+  }
+  .burger{
+    width: 3vh;
+    height: 0.3vh;
+    background-color: white;
+    margin: 8px 0;
+    /* background-color: transparent; */
+  }
+  .navbar-logo{
+    width: 152px;
+    height: auto;
+    grid-column: 2 / 2;
+    grid-row: 2;
+  }
+  .main-navbar{
+    height: 7vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-container{
+    display: grid;
+    grid-template-rows: 2.5vh 4.5vh;
+    grid-template-columns: 3vw 200px 3fr 1fr 1fr 1fr 1fr 10vw;
+  }
+
+  /*FADING THE IMG*/
+  .first-hero::after {
+    position: sticky;
+    background-image: linear-gradient(to bottom, transparent 0%, #1A1A24 100%);
+    margin-top: 71vh;
+    height: 31vh;
+  }
+  .hero-headline p{
+    display: none;
+  }
+  .hero{
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-headline{
+    font-family: "AktivGrotesk-Bold";
+    font-size: 6vh;
+    letter-spacing: 0.18px;
+    line-height: 34px;
+    position: absolute;
+    /* padding-top: 60vh; */
+    z-index: 100;
+    text-align: left;
+    width: 80vw;
+  }
+  .hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* flex-flow: row; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .between-div p{
+    letter-spacing: 1.61px;
+    font-size: 2.5vh;
+    width: 88vw;
+    text-align: left;
+    margin-bottom: 3vh;
+    line-height: 4vh;
+  }
+  .between-div h5{
+  	height: 13vh;
+  	width: 88vw;
+  	font-family: AktivGrotesk-Bold;
+  	font-size: 7vh;
+  	letter-spacing: 1.42px;
+  	line-height: 8vh;
+  	text-align: left;
+    margin-bottom: 14vh;
+  }
+
+  .second-hero{
+    height:77vh;
+  }
+  .third-hero{
+    height: 50vh;
+  }
+  /*FOOTER DESIGN*/
+  .newsletter-brochure{
+    width: 60vw;
+  }
+  .newsletter-brochure p{
+    margin-bottom: 8px;
+    letter-spacing: 2.46px;
+    font-size: 2vh;
+  }
+  .footer-logo img{
+    width: 60vw;
+    margin-top: 15vh;
+  }
+  .newsletter-brochure input{
+    width: 52vw;
+    height: 3vh;
+  }
+  .newsletter{
+    width: 8vw;
+    height: 3.2vh;
+  }
+  .brochure{
+    height: 3vh;
+    width: 60vw;
+    font-size: 1.7vh;
+    letter-spacing: 1.07px;
+  }
+  .newsletter img{
+    width: 4.5vw;
+  }
+  .footer-buttons{
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+  }
+  .footer-button{
+    width: 100vw;
+    /* text-align: center; */
+    border-top: 1px solid white;
+    font-size: 1.7vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-line{
+    width: 100vw;
+    margin-top: 0px;
+    border-top: 1px solid white;
+  }
+  .social-media img{
+    margin: 0px 30px 43px 30px;
+    width: 2.7vh;
+    height: 2.7vh;
+  }
+  .footer-copywrite {
+  	height: 17px;
+  	width: 100vw;
+  	font-family: AktivGrotesk-Light;
+  	font-size: 1.5vh;
+  	letter-spacing: 1.4px;
+  	line-height: 15px;
+    text-align: center;
+  }
+}
