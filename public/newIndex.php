@@ -11,6 +11,7 @@ declare(strict_types=1);
   <link rel="stylesheet" href="newStyleMobile.css">
   <link rel="stylesheet" href="actions.css">
   <link rel="stylesheet" href="sticky-navbar.css">
+  <link rel="stylesheet" href="drop-down.css">
   <title>Fast Security 1.0</title>
 
 </head>
@@ -32,20 +33,36 @@ declare(strict_types=1);
   </header>
   <!--DROP IN-->
   <div class="drop-in">
+    <div class="drop-down-contact drop-down-item">
+      CONTACT
+    </div>
+    <div class="drop-down-newsletter drop-down-item">
+      NEWSLETTER
+    </div>
+    <div class="drop-down-brochure drop-down-item">
+      BROCHURE
+    </div>
+    <div class="drop-down-about drop-down-item">
+      ABOUT
+    </div>
+    <div class="lang-buttons">
+      <button type="button" name="button">ENGLISH</button>
+      <button type="button" name="button">SWEDISH</button>
+    </div>
+    <div class="drop-down-social">
+      <img src="att/facebook-icon.svg">
+      <img src="att/linkedin-icon.svg">
+      <img src="att/twitter-icon.svg">
+    </div>
 
   </div>
   <!-- STICK/ NAVBAR FURTHER DOWN-->
   <div class="navbar-further-down">
     <div class="navbar-further-down-logo">
-      THE LOGO
+      <img class="navbar-logo" src="att/saab-logo.png"/>
     </div>
     <div class="navbar-further-down-buttons">
-      <ul class="navbar-further-down-list">
-        <li>Newsletter</li>
-        <li>Catalouge</li>
-      </ul>
-      <div class="nav-space">
-      </div>
+        <button class="navbar-further-down-button">GET THE LATEST NEWS</button>
     </div>
   </div>
   <!--FIRST HERO -->

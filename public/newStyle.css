@@ -52,18 +52,12 @@ body{
   display: block;
   position: absolute;
   background-image: linear-gradient(to bottom, transparent 0%, #1A1A24 100%);
-  margin-top: 269px;
+  margin-top: 325px;
   height: 408px;
   width: 100vw;
   content: '';
 }
 /*FAKE NAV-BAR*/
-.navbar-logo{
-  width: 152px;
-  height: auto;
-  grid-column: 2 / 2;
-  grid-row: 1;
-}
 
 .main-navbar{
   height: 10vh;
@@ -80,26 +74,44 @@ body{
 }
 .navbar-container{
   width: 100vw;
+  height: 100%;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 3vh 1fr;
   grid-template-columns: 70px 152px 3fr 1fr 1fr 1fr 1fr 60px;
+}
+.navbar-logo{
+  width: 152px;
+  height: auto;
+  grid-column: 2 / 2;
+  grid-row: 2;
 }
 .burger-container{
   grid-column: 8;
-  grid-row: 1;
+  grid-row: 2;
   z-index: 300;
 }
 .burger{
   display: none;
 }
 .nav-contact{
+  grid-row: 2;
   grid-column: 4;
 }
 .nav-newsletter{
+  grid-row: 2;
   grid-column: 5;
 }
 .nav-brochure{
+  grid-row: 2;
   grid-column: 6;
+}
+.nav-about{
+  grid-row: 2;
+  grid-column: 7;
+}
+.navbar-container h2{
+  padding-top: 12px;
+
 }
 .nav-item{
   font-size: 22px;
