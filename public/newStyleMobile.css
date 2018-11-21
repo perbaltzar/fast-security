@@ -1,30 +1,49 @@
 @media only screen and (max-width: 1000px) {
   body{
-    /* background-color: blue; */
+    width: 100vw;
   }
   .burger-container{
     grid-column: 8;
     grid-row: 2;
     display: block;
   }
+  .burger-container:hover{
+    cursor: pointer;
+  }
   .burger{
     display: block;
+    transition: all .4s ease;
   }
   .nav-item{
     display: none;
   }
   .burger{
-    width: 3vh;
-    height: 0.3vh;
+    width: 50px;
     background-color: white;
-    margin: 8px 0;
+    margin: 10px 0;
+    /* margin-top: 0px; */
     /* background-color: transparent; */
+  }
+  /*DROP IN MENU*/
+  .drop-in{
+    width: 100vw;
+    height: 50vh;
+    background-color: #00205a;
+    display: block;
+    position: fixed;
+    z-index: 200;
+    transition: all .5s ease;
+    transform:translateY(-100vh);
+  }
+  .drop-in-active{
+    transform: translateY(0);
   }
   .navbar-logo{
     width: 152px;
     height: auto;
     grid-column: 2 / 2;
     grid-row: 2;
+    z-index: 300;
   }
   .main-navbar{
     height: 7vh;
@@ -125,7 +144,7 @@
   }
   .newsletter{
     width: 8vw;
-    height: 3.2vh;
+    height: 3.1vh;
   }
   .brochure{
     height: 3vh;
@@ -144,6 +163,7 @@
 
   }
   .footer-button{
+    padding: 0px;
     width: 100vw;
     /* text-align: center; */
     border-top: 1px solid white;

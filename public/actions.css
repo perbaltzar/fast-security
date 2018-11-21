@@ -1,0 +1,16 @@
+.burger-animation div{
+  transition: all .4s ease;
+}
+.burger-animation :nth-child(1){
+  transform: rotate(45deg) translateY(-7px);
+  transform-origin: top left;
+
+}
+.burger-animation :nth-child(2){
+  transform: translateX(10px);
+  opacity: 0;
+}
+.burger-animation :nth-child(3){
+  transform-origin: top left;
+  transform: rotate(-45deg) translate(0px, 7px);
+}
