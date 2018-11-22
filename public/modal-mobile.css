@@ -1,0 +1,45 @@
+/*MODAL DESIGN FOR MOBILE*/
+@media only screen and (max-width: 1000px) {
+  .modal-container{
+    height: 60vh;
+  }
+  .modal{
+    width: 90vw;
+  }
+
+  .modal p{
+    width: 70%;
+    text-align: center;
+  }
+  .modal h5{
+    width: 80%;
+    text-align: center;
+  }
+  .newsletter-modal{
+    width: 80%;
+  }
+  .newsletter-modal p{
+    width: 100%;
+    font-size: 2.5vh;
+    /* line-height: 23px; */
+    margin-bottom: .5vh;
+    text-align: center;
+    letter-spacing: 2.46px;
+  }
+  .input-modal{
+    height: 3vh;
+    width: 55vw;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 2vh;
+  }
+  .button-modal{
+    width: 5vh;
+    height: 3.1vh;
+  }
+  .button-modal img{
+    height: 3vh;
+    width: 6vw;
+    margin: 0px;
+  }
+}

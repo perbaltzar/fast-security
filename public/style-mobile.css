@@ -127,6 +127,8 @@
   .newsletter-brochure input{
     width: 52vw;
     height: 3vh;
+    font-size: 2vh;
+    padding-left: 0.4vh;
   }
   .newsletter{
     width: 8vw;

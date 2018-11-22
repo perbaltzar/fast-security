@@ -36,4 +36,4 @@ close.addEventListener('click', () =>{
 // });
 
 
-setTimeout(open_modal, 3000);
+setTimeout(open_modal, 10000);

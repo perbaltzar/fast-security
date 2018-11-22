@@ -1,16 +1,18 @@
 <!--FOOTER-->
 <div class="footer">
   <div class="newsletter-brochure">
-    <p>GET THE LATEST NEWS</p>
+    <p><?=strtoupper($lines['latest'])?></p>
     <hr>
     <div class="inputfield">
-      <input class="email-input" type="email" name="" value="">
-      <button class="newsletter" type="button" name="button">
-        <img src="att/button-arrow.svg">
-      </button>
+      <form class="" action="signup.html" method="post">
+        <input class="email-input" type="email" name="" value="" placeholder="<?=$lines['email']?>">
+        <button class="newsletter" type="button" name="button">
+          <img src="att/button-arrow.svg">
+        </button>
+      </form>
     </div>
     <button class="brochure" type="button" name="button">
-      DOWNLOAD OUR BROCHURE
+      <?=strtoupper($lines['download'])?>
     </button>
   </div>
   <div class="footer-logo">
@@ -18,16 +20,16 @@
   </div>
   <div class="footer-buttons">
     <div class="footer-contact footer-button">
-      CONTACT
+      <?=strtoupper($lines['contact'])?>
     </div>
     <div class="footer-newsletter line-left footer-button">
-      NEWSLETTER
+      <?=strtoupper($lines['newsletter'])?>
     </div>
     <div class="footer-brochure line-left footer-button">
-      BROCHURE
+      <?=strtoupper($lines['brochure'])?>
     </div>
     <div class="footer-about line-left footer-button">
-      ABOUT
+      <?=strtoupper($lines['about'])?>
     </div>
   </div>
   <div class="footer-line">
