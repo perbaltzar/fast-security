@@ -4,9 +4,9 @@
     <p><?=strtoupper($lines['latest'])?></p>
     <hr>
     <div class="inputfield">
-      <form class="" action="signup.html" method="post">
-        <input class="email-input" type="email" name="" value="" placeholder="<?=$lines['email']?>">
-        <button class="newsletter" type="button" name="button">
+      <form action="signup.php" method="post">
+        <input class="email-input" type="email" name="email" value="" placeholder="<?=$lines['email']?>">
+        <button class="newsletter" type="submit" action="signup.php">
           <img src="att/button-arrow.svg">
         </button>
       </form>

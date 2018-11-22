@@ -7,14 +7,8 @@ if (isset($_GET['locale'])){
 }else{
   require (__DIR__.'/lang/en.php');
 }
-
-//Checking if user been here before
-if (isset($_COOKIE['hasVisit'])){
-  require(__DIR__.'/modal.php');
-}else{
-  setcookie("hasVisit", '1' ,time()+60*60*24*365);
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -81,7 +75,24 @@ if (isset($_COOKIE['hasVisit'])){
         <button class="navbar-further-down-button"><?=strtoupper($lines['latest'])?></button>
     </div>
   </div>
-
+  <!--MODAL POPUP-->
+  <div class="modal-container">
+  <?php
+  //Checking if user been here before
+  if (isset($_COOKIE['hasVisit'])){
+    if (!isset($_COOKIE['hasSignUp'])){
+      require(__DIR__.'/modal.php');
+      //setcookie("hasSignUp", '1' ,time()+60*60*24*365);
+    }else{
+      //Ugly code to stop the javascript errors
+      ?><div class="close"></div><?php
+    }
+  }else{
+    ?><div class="close"></div><?php
+    setcookie("hasVisit", '1' ,time()+60*60*24*365);
+  }
+  ?>
+  </div>
   <!--FIRST HERO -->
   <div class="hero first-hero">
     <div class="hero-headline">
