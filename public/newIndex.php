@@ -1,7 +1,12 @@
 <?php
-
-declare(strict_types=1);
-
+//Function for determing the launguage
+require (__DIR__.'/functions.php');
+if (isset($_GET['locale'])){
+  $locale = $_GET['locale'];
+  require (trans($locale));
+}else{
+  require (__DIR__.'/lang/en.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,6 +17,7 @@ declare(strict_types=1);
   <link rel="stylesheet" href="actions.css">
   <link rel="stylesheet" href="sticky-navbar.css">
   <link rel="stylesheet" href="drop-down.css">
+  <link rel="stylesheet" href="modal.css">
   <title>Fast Security 1.0</title>
 
 </head>
@@ -46,8 +52,10 @@ declare(strict_types=1);
       ABOUT
     </div>
     <div class="lang-buttons">
-      <button type="button" name="button">ENGLISH</button>
-      <button type="button" name="button">SWEDISH</button>
+      <form method="get">
+        <button type="submit" name="locale" value="en">ENGLISH</button>
+        <button type="submit" name="locale" value="sv">SWEDISH</button>
+      </form>
     </div>
     <div class="drop-down-social">
       <img src="att/facebook-icon.svg">
@@ -65,20 +73,22 @@ declare(strict_types=1);
         <button class="navbar-further-down-button">GET THE LATEST NEWS</button>
     </div>
   </div>
+  <!--POP UP-->
+  <?php
+  require(__DIR__.'/popup.php');
+  ?>
   <!--FIRST HERO -->
   <div class="hero first-hero">
     <div class="hero-headline">
-      <h5>Join the future</h5>
+      <h5><?=$lines['headline']?></h5>
       <p>FAST SECURITY 1.0</p>
     </div>
   </div>
   <!--BETWEEN DIV-->
   <div class="between-div">
-    <p>Many people still think Saab makes cars, and that is correct. </p>
-    <h5>We are on the go for the future.</h5>
-    <p>Saab is very much alive and well, as one of the world’s most
-      innovative companies. And now we are proud to present our
-      motorcycle for the future: FastSecurity, FS.</p>
+    <p><?=$lines['hero1paragraph']?></p>
+    <h5><?=$lines['hero1headline']?></h5>
+    <p><?=$lines['hero1paragraph2']?></p>
 
   </div>
   <!--SLIDER SECOND HERO-->
@@ -108,51 +118,5 @@ declare(strict_types=1);
   <!--THIRD HERO-->
   <div class="hero third-hero">
   </div>
-  <!--FOOTER-->
-  <div class="footer">
-    <div class="newsletter-brochure">
-      <p>GET THE LATEST NEWS</p>
-      <hr>
-      <div class="inputfield">
-        <input class="email-input" type="email" name="" value="">
-        <button class="newsletter" type="button" name="button">
-          <img src="att/button-arrow.svg">
-        </button>
-      </div>
-      <button class="brochure" type="button" name="button">
-        DOWNLOAD OUR BROCHURE
-      </button>
-    </div>
-    <div class="footer-logo">
-      <img src="att/saab-logo.png">
-    </div>
-    <div class="footer-buttons">
-      <div class="footer-contact footer-button">
-        CONTACT
-      </div>
-      <div class="footer-newsletter line-left footer-button">
-        NEWSLETTER
-      </div>
-      <div class="footer-brochure line-left footer-button">
-        BROCHURE
-      </div>
-      <div class="footer-about line-left footer-button">
-        ABOUT
-      </div>
-    </div>
-    <div class="footer-line">
-    </div>
-    <div class="social-media">
-      <img src="att/facebook-icon.svg">
-      <img src="att/linkedin-icon.svg">
-      <img src="att/twitter-icon.svg">
-    </div>
-    <div class="footer-copywrite">
-      © 2019 FastSecurity
-    </div>
-  </div>
-  <script type="text/javascript" src="newscript.js">
-
-  </script>
-</body>
-</html>
+<?php
+require (__DIR__.'/footer.php');

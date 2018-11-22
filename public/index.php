@@ -56,7 +56,10 @@ if (isset($_GET['locale'])){
       </div>
     </div>
   </div>
-
+  <!--POPUP-->
+  <?php
+  require (__DIR__.'/popup.php');
+  ?>
 
   <!--FIRST HERO-->
   <div class="heroes first-hero fade-in-img hero-img img-1"><!-- <img class="hero-img" src="/pictures/1.jpg"> -->
