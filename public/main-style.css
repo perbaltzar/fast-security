@@ -131,7 +131,7 @@ body{
   border: 2px solid white;
 }
 .nav-item{
-  /* padding-top: 12px; */  
+  /* padding-top: 12px; */
   font-size: 22px;
   font-family: "AktivGrotesk-Light";
   letter-spacing: 1.39px;
@@ -190,17 +190,35 @@ section {
     text-align: center;
     position: relative;
 } */
+/********************/
+/*GRID IMAGES DESIGN*/
+/********************/
 
-
-.side-by-side{
+.grid-pictures{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 150vh;
+}
+.grid-image{
   width: 50vw;
-  height: 50vw;
-  background-color: darkgrey;
-  border: 1px white solid;
 }
-.two-pictures{
+.grid-image img{
+  height: 100%;
+  width: 100%;
+}
+.grid-image-middle{
+  grid-row: 3;
+}
+.grid-text{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/********************/
+/*   FOOTER DESIGN  */
+/********************/
 .footer{
   height: 100vh;
   /* border: 1px white solid; */

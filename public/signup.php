@@ -8,7 +8,7 @@ if (isset($POST['email'])){
   if (filter_var($email, FILTER_VALIDATE_EMAIL)){
     //storing the email in a database
   }else{
-    $error = "You email is wrong";
+    $error = "Your email is wrong";
   }
 }
 

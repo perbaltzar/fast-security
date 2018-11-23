@@ -36,7 +36,7 @@ if (isset($_GET['locale'])){
           </a>
         </h2>
         <h2 class="nav-about nav-item"><?=strtoupper($lines['about'])?></h2>
-        <form method="get">
+        <form class="nav-item" method="get">
           <?php
           if (isset($_GET['locale'])){
             if ($locale === 'sv'){ ?>
@@ -110,12 +110,8 @@ if (isset($_GET['locale'])){
   if (isset($_COOKIE['hasVisit'])){
     if (!isset($_COOKIE['hasSignUp'])){
       require(__DIR__.'/modal.php');
-    }else{
-      //Ugly code to stop the javascript errors
-      ?><div class="close"></div><?php
     }
   }else{
-    ?><div class="close"></div><?php
     setcookie("hasVisit", '1' ,time()+60*60*24*365);
   }
   ?>
@@ -143,13 +139,25 @@ if (isset($_GET['locale'])){
       <img src="pictures/dark-studio-front.jpg">
     </section> -->
   </div>
-  <!--DOUBLE PICTURE-->
-  <div class="two-pictures">
-    <div class="side-by-side left-image">
-
+  <!--DOUBLE PICTURE GRID-->
+  <div class="grid-pictures">
+    <div class="grid-image grid-image-top">
+      <img src="pictures/3.jpg">
     </div>
-    <div class="side-by-side right-image">
-
+    <div class="grid-text grid-image-text-top">
+        <p>TEXT 1</p>
+    </div>
+    <div class="grid-text grid-image-text-middle">
+      <p>TEXT 2</p>
+    </div>
+    <div class="grid-image grid-image-middle">
+        <img src="pictures/3.jpg">
+    </div>
+    <div class="grid-image grid-image-bottom">
+      <img src="pictures/3.jpg">
+    </div>
+    <div class="grid-text grid-image-text-bottom  ">
+      <p>TEXT 3</p>
     </div>
   </div>
   <!--BETWEEN DIV-->

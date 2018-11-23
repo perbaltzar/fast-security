@@ -43,14 +43,18 @@
     grid-template-rows: 2.5vh 4.5vh;
     grid-template-columns: 3vw 200px 3fr 1fr 1fr 1fr 1fr 10vw;
   }
-
+  /****************/
   /*FADING THE IMG*/
+  /****************/
   .first-hero::after {
     position: sticky;
     background-image: linear-gradient(to bottom, transparent 0%, #1A1A24 100%);
     margin-top: 71vh;
     height: 31vh;
   }
+  /*****************/
+  /*  HERO DESIGN  */
+  /*****************/
   .hero-headline p{
     display: none;
   }
@@ -86,6 +90,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  /********************/
+  /*BETWEEN DIV DESIGN*/
+  /********************/
   .between-div p{
     letter-spacing: 1.61px;
     font-size: 2.5vh;
@@ -111,7 +118,29 @@
   .third-hero{
     height: 50vh;
   }
+
+
+
+  /***************/
   /*FOOTER DESIGN*/
+  /***************/
+  .grid-pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr,6);
+    height: 150vh;
+  }
+  .grid-image{
+    width: 100vw;
+  }
+  .grid-text{
+    height: 30vh;
+
+  }
+
+  /***************/
+  /*FOOTER DESIGN*/
+  /***************/
   .newsletter-brochure{
     width: 60vw;
 
