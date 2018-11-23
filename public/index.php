@@ -27,10 +27,34 @@ if (isset($_GET['locale'])){
   <header class="main-navbar">
     <div class="navbar-container">
       <img class="navbar-logo" src="att/saab-logo.png"/>
-      <h2 class="nav-contact nav-item"><?=strtoupper($lines['contact'])?></h2>
-      <h2 class="nav-newsletter nav-item"><?=strtoupper($lines['newsletter'])?></h2>
-      <h2 class="nav-brochure nav-item"><?=strtoupper($lines['brochure'])?></h2>
-      <h2 class="nav-about nav-item"><?=strtoupper($lines['about'])?></h2>
+      <div class="nav-items">
+        <h2 class="nav-contact nav-item"><?=strtoupper($lines['contact'])?></h2>
+        <h2 class="nav-newsletter nav-item go-to-bottom"><?=strtoupper($lines['newsletter'])?></h2>
+        <h2 class="nav-brochure nav-item">
+          <a href="downloads/catalogue.txt" download>
+            <?=strtoupper($lines['brochure'])?>
+          </a>
+        </h2>
+        <h2 class="nav-about nav-item"><?=strtoupper($lines['about'])?></h2>
+        <form method="get">
+          <?php
+          if (isset($_GET['locale'])){
+            if ($locale === 'sv'){ ?>
+              <button type="submit" name="locale" value="en"><?=strtoupper($lines['english'])?></button>
+            <?php
+            }else{
+            ?>
+              <button type="submit" name="locale" value="sv"><?=strtoupper($lines['swedish'])?></button>
+            <?php
+            }
+          }else{?>
+          <button type="submit" name="locale" value="sv"><?=strtoupper($lines['swedish'])?></button>
+        <?php
+        }
+        ?>
+
+        </form>
+      </div>
       <div class="burger-container">
         <div class="burger"></div>
         <div class="burger"></div>
@@ -44,12 +68,14 @@ if (isset($_GET['locale'])){
     <div class="drop-down-contact drop-down-item">
       <?=strtoupper($lines['contact'])?>
     </div>
-    <div class="drop-down-newsletter drop-down-item">
+    <div class="drop-down-newsletter drop-down-item go-to-bottom">
       <?=strtoupper($lines['newsletter'])?>
     </div>
-    <div class="drop-down-brochure drop-down-item">
-      <?=strtoupper($lines['brochure'])?>
-    </div>
+      <a href="downloads/catalogue.txt" download>
+        <div class="drop-down-brochure drop-down-item">
+          <?=strtoupper($lines['brochure'])?>
+        </div>
+      </a>
     <div class="drop-down-about drop-down-item">
       <?=strtoupper($lines['about'])?>
     </div>
@@ -72,17 +98,18 @@ if (isset($_GET['locale'])){
       <img class="navbar-logo" src="att/saab-logo.png"/>
     </div>
     <div class="navbar-further-down-buttons">
-        <button class="navbar-further-down-button"><?=strtoupper($lines['latest'])?></button>
+        <button class="navbar-further-down-button go-to-bottom"><?=strtoupper($lines['latest'])?></button>
     </div>
   </div>
   <!--MODAL POPUP-->
   <div class="modal-container">
   <?php
-  //Checking if user been here before
+  /////////////////////////////////////
+  //Checking if user been here before//
+  /////////////////////////////////////
   if (isset($_COOKIE['hasVisit'])){
     if (!isset($_COOKIE['hasSignUp'])){
       require(__DIR__.'/modal.php');
-      //setcookie("hasSignUp", '1' ,time()+60*60*24*365);
     }else{
       //Ugly code to stop the javascript errors
       ?><div class="close"></div><?php

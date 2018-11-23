@@ -6,6 +6,9 @@
   color: white;
   font-family: "AktivGrotesk-Light";
 }
+a{
+  text-decoration: none;
+}
 .first-hero{
   background: url('pictures/2.jpg');
 }
@@ -59,7 +62,7 @@ body{
   width: 100vw;
   content: '';
 }
-/*FAKE NAV-BAR*/
+/*NAV-BAR*/
 
 .main-navbar{
   height: 10vh;
@@ -79,13 +82,20 @@ body{
   height: 100%;
   display: grid;
   grid-template-rows: 3vh 1fr;
-  grid-template-columns: 70px 152px 3fr 1fr 1fr 1fr 1fr 60px;
+  grid-template-columns: 70px 152px 3fr 4fr 60px;
 }
 .navbar-logo{
   width: 152px;
   height: auto;
   grid-column: 2 / 2;
   grid-row: 2;
+}
+.nav-items{
+  grid-column: 4 / 4;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .burger-container{
   grid-column: 8;
@@ -95,27 +105,33 @@ body{
 .burger{
   display: none;
 }
-.nav-contact{
-  grid-row: 2;
-  grid-column: 4;
+.nav-contact:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
-.nav-newsletter{
-  grid-row: 2;
-  grid-column: 5;
+.nav-newsletter:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
-.nav-brochure{
-  grid-row: 2;
-  grid-column: 6;
+.nav-brochure:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
-.nav-about{
-  grid-row: 2;
-  grid-column: 7;
+.nav-about:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
-.navbar-container h2{
-  padding-top: 12px;
 
+.nav-items button{
+  height: 5vh;
+  width: 10vw;
+  margin-left: 2vw;
+  font-size: 2vh;
+  background-color: transparent;
+  border: 2px solid white;
 }
 .nav-item{
+  /* padding-top: 12px; */  
   font-size: 22px;
   font-family: "AktivGrotesk-Light";
   letter-spacing: 1.39px;
@@ -205,6 +221,8 @@ section {
 
 .newsletter-brochure p{
  margin-bottom: 8px;
+ text-align: center;
+ width: 100%;
  border-bottom: 1px solid white;
 }
 .inputfield{
@@ -283,7 +301,7 @@ section {
   }
   form{
     display: flex;
-    
+
   }
 
 /* height: 31px;	width: 338px;	color: #FFFFFF;				line-height: 30px;	text-align: center; */

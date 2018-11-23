@@ -42,7 +42,19 @@
     © 2019 FastSecurity
   </div>
 </div>
-<script type="text/javascript" src="newscript.js">
+<script type="text/javascript">
+let open_the_modal = false;
+<?php
+if (isset($_COOKIE['hasVisit'])):
+  if (!isset($_COOKIE['hasSignUp'])): ?>
+    open_the_modal = true;
+  <?php
+  endif;
+endif;
+?>
+
+</script>
+<script type="text/javascript" src="script.js">
 
 </script>
 </body>
