@@ -7,6 +7,10 @@ const sticky_appear = document.querySelector('.second-hero');
 //Modal variables
 const modal = document.querySelector('.modal-container');
 const close = document.querySelector('.close');
+//Sticky navbar button
+const go_to_bottom = document.querySelector('.navbar-further-down-button');
+
+
 
 //Activate the drop down menu
 burger.addEventListener('click', ()=> {
@@ -37,3 +41,9 @@ close.addEventListener('click', () =>{
 
 
 setTimeout(open_modal, 10);
+// Scroll to a certain element
+go_to_bottom.addEventListener('click', () =>{
+  document.querySelector('.footer').scrollIntoView({
+    behavior: 'smooth'
+  });
+})

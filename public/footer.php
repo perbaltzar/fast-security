@@ -2,7 +2,6 @@
 <div class="footer">
   <div class="newsletter-brochure">
     <p><?=strtoupper($lines['latest'])?></p>
-    <hr>
     <div class="inputfield">
       <form action="signup.php" method="post">
         <input class="email-input" type="email" name="email" value="" placeholder="<?=$lines['email']?>">

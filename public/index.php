@@ -109,7 +109,12 @@ if (isset($_GET['locale'])){
   </div>
   <!--SLIDER SECOND HERO-->
   <div class="hero second-hero slider">
-
+    <!-- <section>
+      <img src="pictures/tunnel-woman.jpg">
+    </section>
+    <section>
+      <img src="pictures/dark-studio-front.jpg">
+    </section> -->
   </div>
   <!--DOUBLE PICTURE-->
   <div class="two-pictures">

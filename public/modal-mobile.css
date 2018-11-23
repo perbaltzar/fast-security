@@ -1,7 +1,7 @@
 /*MODAL DESIGN FOR MOBILE*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .modal-container{
-    height: 60vh;
+    height: 70vh;
   }
   .modal{
     width: 90vw;
@@ -35,11 +35,11 @@
   }
   .button-modal{
     width: 5vh;
-    height: 3.1vh;
+    height: 3.7vh;
   }
   .button-modal img{
     height: 3vh;
-    width: 6vw;
+    width: 60%;
     margin: 0px;
   }
 }
