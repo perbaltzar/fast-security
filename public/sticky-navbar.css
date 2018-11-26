@@ -11,7 +11,7 @@
   align-items: center;
   flex-flow: row;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   .navbar-visible{
     top: 0vh;
     opacity: 1;

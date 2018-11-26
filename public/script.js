@@ -57,6 +57,8 @@ if (open_the_modal){
 //////////////////////////////////
 Array.from(go_to_bottoms).forEach((go_to_bottom) =>{
   go_to_bottom.addEventListener('click', () =>{
+    drop_in.classList.remove('drop-in-active');
+    burger.classList.remove('burger-animation');
     document.querySelector('.footer').scrollIntoView({
       behavior: 'smooth'
     });

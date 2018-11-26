@@ -9,10 +9,12 @@
     <p class="latest-news"><?=strtoupper($lines['latest'])?></p>
     <hr>
     <div class="inputfield">
-      <input class="input-modal" type="email" name="" value="" placeholder="<?=$lines['email']?>">
-      <button class="button-modal" type="button" name="button">
-        <img src="att/button-arrow.svg">
-      </button>
+      <form action="signup.php" method="post">
+        <input class="input-modal" type="email" name="" value="" placeholder="<?=$lines['email']?>">
+        <button class="button-modal" type="button" name="button">
+          <img src="att/button-arrow.svg">
+        </button>
+      </form>
     </div>
   </div>
 </div>

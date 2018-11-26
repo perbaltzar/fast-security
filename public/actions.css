@@ -2,8 +2,8 @@
   transition: all .4s ease;
 }
 .burger-animation :nth-child(1){
-  transform: rotate(45deg) translateY(-7px);
   transform-origin: top left;
+  transform: rotate(45deg) translateX(3px);
 }
 .burger-animation :nth-child(2){
   transform: translateX(30px);
@@ -11,5 +11,5 @@
 }
 .burger-animation :nth-child(3){
   transform-origin: top left;
-  transform: rotate(-45deg) translate(0px, 7px);
+  transform: rotate(-45deg) translate(-2px, 2px);
 }

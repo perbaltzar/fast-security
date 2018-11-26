@@ -2,6 +2,9 @@
   body{
     width: 100vw;
   }
+  /****************/
+  /* NAVBAR DESGIN*/
+  /****************/
   .burger-container{
     grid-column: 8;
     grid-row: 2;
@@ -18,11 +21,10 @@
     display: none;
   }
   .burger{
-    width: 50px;
+    width: 49px;
     background-color: white;
-    margin: 10px 0;
+    margin: 0 0 14px 0;
   }
-
   .navbar-logo{
     width: 152px;
     height: auto;
@@ -55,9 +57,7 @@
   /*****************/
   /*  HERO DESIGN  */
   /*****************/
-  .hero-headline p{
-    display: none;
-  }
+
   .hero{
     padding: 0;
     height: 100vh;
@@ -111,6 +111,16 @@
   	text-align: left;
     margin-bottom: 14vh;
   }
+  .between-div h4{
+  	height: 13vh;
+  	width: 88vw;
+  	font-family: AktivGrotesk-Bold;
+  	font-size: 7vh;
+  	letter-spacing: 1.42px;
+  	line-height: 8vh;
+  	text-align: left;
+    margin-bottom: 14vh;
+  }
 
   .second-hero{
     height:77vh;
@@ -122,7 +132,7 @@
 
 
   /***************/
-  /*FOOTER DESIGN*/
+  /*GRID IMAGES DESIGN*/
   /***************/
   .grid-pictures{
     display: grid;
@@ -137,42 +147,58 @@
     height: 30vh;
 
   }
+  .grid-pictures{
+    height: 330vw;
+  }
 
   /***************/
   /*FOOTER DESIGN*/
   /***************/
   .newsletter-brochure{
-    width: 60vw;
+    width: 70vw;
 
   }
   .newsletter-brochure p{
     margin-bottom: 8px;
     letter-spacing: 2.46px;
-    font-size: 2vh;
+    font-size: 2.75vh;
   }
   .footer-logo img{
     width: 60vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
+  }
+  .footer-logo{
+    height: 25vh;
   }
   .newsletter-brochure input{
-    width: 51vw;
-    height: 3vh;
+    width: 60vw;
+    height: 4vh;
     font-size: 2vh;
     padding-left: 0.4vh;
   }
   .newsletter{
-    width: 7vw;
-    height: 3.1vh;
+    width: 9vw;
+    height: 4.08vh;
     /* transform: translate(-0.8vw, -0.15vh); */
   }
+  .inputfield{
+    height: 4vh;
+    margin-bottom: 3vh;
+  }
+  .inputfield form{
+    height: 4vh;
+  }
+  .email-input{
+    height: 6vh;
+  }
   .brochure{
-    height: 3vh;
-    width: 60vw;
-    font-size: 1.7vh;
+    height: 4vh;
+    width: 70vw;
+    font-size: 1.8vh;
     letter-spacing: 1.07px;
   }
-  .newsletter img{
-    width: 4.5vw;
+  .newsletter svg{
+    width: 5vw;
   }
   .footer-buttons{
     width: 100vw;
@@ -186,7 +212,7 @@
     /* text-align: center; */
     border-top: 1px solid white;
     font-size: 1.7vh;
-    height: 4vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,6 +221,10 @@
     width: 100vw;
     margin-top: 0px;
     border-top: 1px solid white;
+  }
+  .social-media{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
   }
   .social-media img{
     margin: 0px 30px 43px 30px;

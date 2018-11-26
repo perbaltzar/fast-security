@@ -231,10 +231,13 @@ section {
   letter-spacing: 2.11px;
 }
 .newsletter-brochure{
-  width: 60vw;
+  width: 30vw;
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+.newsletter svg{
+  width: 3vw;
 }
 
 .newsletter-brochure p{
@@ -251,7 +254,7 @@ section {
   width: 100%;
 }
 .newsletter-brochure input{
-  width: 280px;
+  width: 284px;
   height: 35px;
   background-color: transparent;
   font-size: 26px;
@@ -261,7 +264,7 @@ section {
 }
 
 .newsletter{
-  width: 60px;
+  width: 61px;
   height: 37px;
   border: 0px;
   background-color: #00205a;
@@ -272,14 +275,21 @@ section {
 .brochure{
   background: transparent;
   height: 35px;
-  width: 342px;
+  width: 350px;
   font-size: 20px;
   font-family: AktivGrotesk-Light;
   line-height: 23px;
   text-align: center;
   letter-spacing: 1.96px;
 }
-
+.brochure:hover{
+  background-color: #00205a;
+  cursor: pointer;
+}
+.newsletter:hover{
+  cursor: pointer;
+  background-color: white;
+}
 .footer-logo img{
   margin: 104px;
   width: 374px;
