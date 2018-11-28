@@ -60,7 +60,7 @@ if (isset($_GET['locale'])){
   <!-- STICKY NAVBAR FURTHER DOWN-->
   <div class="navbar-further-down">
     <div class="navbar-further-down-logo">
-      <img class="navbar-logo" src="att/saab-logo.png"/>
+        <img src="att/logo/logotyp-header.svg">
     </div>
     <div class="navbar-further-down-buttons">
         <button class="navbar-further-down-button go-to-bottom"><?=strtoupper($lines['latest'])?></button>
@@ -107,7 +107,7 @@ if (isset($_GET['locale'])){
   <!--DOUBLE PICTURE GRID-->
   <div class="grid-pictures">
     <div class="grid-image grid-image-top">
-      <img src="pictures/3.jpg">
+
     </div>
     <div class="grid-text grid-image-text-top">
         <h5>Exterior</h5>
@@ -124,10 +124,10 @@ if (isset($_GET['locale'])){
       </div>
     </div>
     <div class="grid-image grid-image-middle">
-        <img src="pictures/3.jpg">
+
     </div>
     <div class="grid-image grid-image-bottom">
-      
+
     </div>
   </div>
   <!--BETWEEN DIV-->

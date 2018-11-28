@@ -1,7 +1,8 @@
 <!--NAV BAR-->
 <header class="main-navbar">
   <div class="navbar-container">
-    <img class="navbar-logo" src="att/saab-logo.png"/>
+    <img class="navbar-logo" src="att/logo/logotyp-header.svg"/>
+
     <div class="nav-items">
       <h2 class="nav-contact nav-item"><?=$lines['contact']?></h2>
       <h2 class="nav-newsletter nav-item go-to-bottom"><?=$lines['newsletter']?></h2>

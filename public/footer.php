@@ -27,7 +27,7 @@
     </button>
   </div>
   <div class="footer-logo">
-    <img src="att/saab-logo.png">
+    <img src="att/logo/logotyp-smallcaps.svg">
   </div>
   <div class="footer-buttons">
     <div class="footer-contact footer-button">

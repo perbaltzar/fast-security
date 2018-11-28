@@ -4,6 +4,7 @@ const drop_in = document.querySelector('.drop-in');
 //Sticky Navbar Variables
 const sticky = document.querySelector('.navbar-further-down ');
 const sticky_appear = document.querySelector('.second-hero');
+const sticky_disappear = document.querySelector('.footer')
 //Sticky navbar button
 const go_to_bottoms = document.querySelectorAll('.go-to-bottom');
 const dropdown_newsletter = document.querySelector('.drop-down-newsletter');
@@ -22,7 +23,7 @@ burger.addEventListener('click', ()=> {
 //Sticky NAVBAR//
 /////////////////
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset >= sticky_appear.offsetTop) { //maybe chosing picture 2 or something like that
+  if (window.pageYOffset >= sticky_appear.offsetTop && window.pageYOffset <= sticky_disappear.offsetTop) { //maybe chosing picture 2 or something like that
     sticky.classList.add("navbar-visible")
   } else {
     sticky.classList.remove("navbar-visible");

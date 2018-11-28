@@ -137,18 +137,23 @@
   .grid-pictures{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr,6);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 150vh;
   }
   .grid-image{
     width: 100vw;
+    grid-column: 1;
+    height: 30vh;
   }
   .grid-text{
     height: 30vh;
-
+    grid-column: 1;
   }
-  .grid-pictures{
-    height: 330vw;
+  .grid-image-middle{
+    grid-row: 3;
+  }
+  .grid-image-bottom{
+    grid-row: 5;
   }
   /***************/
   /*FOOTER DESIGN*/
@@ -166,10 +171,14 @@
   }
   .footer-logo img{
     width: 60vw;
-    margin-top: 10vh;
+    margin:0;
   }
   .footer-logo{
     height: 25vh;
+    margin-bottom: 3vh;
+  }
+  .newsletter-brochure form{
+    width: 70vw;
   }
   .newsletter-brochure input{
     width: 60vw;
@@ -188,6 +197,7 @@
   }
   .inputfield form{
     height: 4vh;
+    width: 70vw;
   }
   .email-input{
     height: 6vh;
@@ -241,4 +251,5 @@
   	line-height: 15px;
     text-align: center;
   }
+
 }

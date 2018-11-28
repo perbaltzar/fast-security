@@ -70,8 +70,13 @@
   width: 8vh;
   margin-bottom: 3vh;
 }
-  .button-modal img{
-    height: 1vh;
-    width: 2vw;
-    margin: 0px;
-  }
+.button-modal img{
+  height: 1vh;
+  width: 2vw;
+  margin: 0px;
+}
+.inputfield-modal-form{
+  display: flex;
+  justify-content: center;
+  width: 55vw;
+}

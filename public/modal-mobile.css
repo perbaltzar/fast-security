@@ -42,4 +42,9 @@
     width: 60%;
     margin: 0px;
   }
+  .inputfield-modal-form{
+    display: flex;
+    justify-content: center;
+    width: 55vw;
+  }
 }
