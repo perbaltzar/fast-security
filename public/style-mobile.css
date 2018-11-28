@@ -150,13 +150,14 @@
   .grid-pictures{
     height: 330vw;
   }
-
   /***************/
   /*FOOTER DESIGN*/
   /***************/
+  .line-left{
+    border: none;
+  }
   .newsletter-brochure{
     width: 70vw;
-
   }
   .newsletter-brochure p{
     margin-bottom: 8px;

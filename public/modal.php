@@ -11,7 +11,7 @@
     <div class="inputfield">
       <form action="signup.php" method="post">
         <input class="input-modal" type="email" name="" value="" placeholder="<?=$lines['email']?>">
-        <button class="button-modal" type="button" name="button">
+        <button class="button-modal" type="submit" name="button">
           <img src="att/button-arrow.svg">
         </button>
       </form>

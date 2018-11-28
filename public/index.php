@@ -110,19 +110,24 @@ if (isset($_GET['locale'])){
       <img src="pictures/3.jpg">
     </div>
     <div class="grid-text grid-image-text-top">
-        <p>TEXT 1</p>
+        <h5>Exterior</h5>
+        <p>Many people still think Saab makes cars, and that is correct. We are on the go for the future</p>
+        <div class="grid-text-button">
+          <button type="button" name="button">READ MORE</button>
+        </div>
     </div>
     <div class="grid-text grid-image-text-middle">
-      <p>TEXT 2</p>
+      <h5>Interior</h5>
+      <p>Many people still think Saab makes cars, and that is correct. We are on the go for the future.</p>
+      <div class="grid-text-button">
+        <button type="button" name="button">READ MORE</button>
+      </div>
     </div>
     <div class="grid-image grid-image-middle">
         <img src="pictures/3.jpg">
     </div>
     <div class="grid-image grid-image-bottom">
-      <img src="pictures/3.jpg">
-    </div>
-    <div class="grid-text grid-image-text-bottom  ">
-      <p>TEXT 3</p>
+      
     </div>
   </div>
   <!--BETWEEN DIV-->
