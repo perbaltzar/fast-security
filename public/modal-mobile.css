@@ -1,5 +1,8 @@
 /*MODAL DESIGN FOR MOBILE*/
 @media only screen and (max-width: 1100px) {
+  .close{
+    margin-right: 3.5vh;
+  }
   .modal-container{
     top: 20vh;
     height: 60vh;

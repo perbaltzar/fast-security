@@ -37,7 +37,7 @@ if (isset($_GET['locale'])){
     <div class="drop-down-newsletter drop-down-item go-to-bottom">
       <?=strtoupper($lines['newsletter'])?>
     </div>
-    <a href="downloads/catalogue.txt" download>
+    <a href="downloads/brochure.pdf" download>
       <div class="drop-down-brochure drop-down-item">
         <?=strtoupper($lines['brochure'])?>
       </div>
@@ -87,6 +87,9 @@ if (isset($_GET['locale'])){
       <h5><?=$lines['headline']?></h5>
       <p><?=strtoupper($lines['fastsecurity'])?></p>
     </div>
+    <div class="arrow-down">
+      <img src="att/arrow-dropdown.svg" alt="">
+    </div>
   </div>
   <!--BETWEEN DIV-->
   <div class="between-div">
@@ -135,8 +138,8 @@ if (isset($_GET['locale'])){
   </div>
 </div>
 <!--BETWEEN DIV-->
-<div class="between-div">
-  <p class="second-between-div-p"><?=$lines['history']?>
+<div class="between-div third-between">
+  <p class="second-between-div-p" id="history"><?=$lines['history']?>
   </p>
 </div>
 <!--THIRD HERO-->

@@ -7,8 +7,9 @@
   /****************/
   .burger-container{
     grid-column: 8;
-    grid-row: 2;
+    grid-row: 1;
     display: block;
+    padding-top: 2.5vh;
   }
   .burger-container:hover{
     cursor: pointer;
@@ -26,10 +27,11 @@
     margin: 0 0 14px 0;
   }
   .navbar-logo{
-    width: 152px;
+    margin-top: 1vh;
+    width: 28vw;
     height: auto;
     grid-column: 2 / 2;
-    grid-row: 2;
+    grid-row: 1;
     z-index: 300;
   }
   .main-navbar{
@@ -42,8 +44,8 @@
   }
   .navbar-container{
     display: grid;
-    grid-template-rows: 2.5vh 4.5vh;
-    grid-template-columns: 3vw 200px 3fr 1fr 1fr 1fr 1fr 10vw;
+    grid-template-rows: 7vh;
+    grid-template-columns: 3vw 28vw 3fr 1fr 1fr 1fr 1fr 10vw;
   }
   /****************/
   /*FADING THE IMG*/
@@ -57,7 +59,6 @@
   /*****************/
   /*  HERO DESIGN  */
   /*****************/
-
   .hero{
     padding: 0;
     height: 100vh;
@@ -68,6 +69,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .first-hero{
+    flex-flow: column;
+    background-position-x: 60%;
+  }
+  .second-hero{
+    background-position-x: 35%;
+    height:77vh;
+  }
+  .third-hero{
+    height: 50vh;
   }
   .hero-headline{
     font-family: "AktivGrotesk-Bold";
@@ -80,15 +92,11 @@
     text-align: left;
     width: 80vw;
   }
-  .hero{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /* align-items: flex-end; */
-    /* flex-flow: row; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .arrow-down img{
+    width: 8vw;
+  }
+  .arrow-down{
+    padding-top: 92vh;
   }
   /********************/
   /*BETWEEN DIV DESIGN*/
@@ -121,12 +129,16 @@
   	text-align: left;
     margin-bottom: 14vh;
   }
-
-  .second-hero{
-    height:77vh;
+  .first-between-div-p-2{
+    width: 78vw;
   }
-  .third-hero{
-    height: 50vh;
+  .third-between{
+    height: 100vh;
+  }
+  #history{
+    font-size: 2.8vh;
+    letter-spacing: 2.7px;
+    width: 84vw;
   }
 
 
@@ -137,8 +149,8 @@
   .grid-pictures{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    height: 150vh;
+    grid-template-rows: 1fr 1.25fr 1fr 1.25fr 1fr;
+    height: 175vh;
   }
   .grid-image{
     width: 100vw;
@@ -149,11 +161,28 @@
     height: 30vh;
     grid-column: 1;
   }
+  .grid-holder{
+    padding-top: 7vh;
+    height: 60%;
+  }
+  .grid-holder h5{
+    width: 33vw;
+    font-size: 4vh;
+  }
+  .grid-holder p{
+    width: 70vw;
+    font-size: 2.4vh;
+    line-height: 2.9vh;
+    letter-spacing: 2.5px;
+  }
   .grid-image-middle{
     grid-row: 3;
   }
   .grid-image-bottom{
     grid-row: 5;
+  }
+  .grid-text-button{
+    margin-bottom: 5vh;
   }
   /***************/
   /*FOOTER DESIGN*/
@@ -166,11 +195,12 @@
   }
   .newsletter-brochure p{
     margin-bottom: 8px;
-    letter-spacing: 2.46px;
-    font-size: 2.75vh;
+    letter-spacing: 0.36vh;
+    font-size: 3vh;
   }
   .footer-logo img{
-    width: 60vw;
+    width: 27vw;
+    padding-top: 3vh;
     margin:0;
   }
   .footer-logo{
@@ -238,9 +268,9 @@
     margin-bottom: 2vh;
   }
   .social-media img{
-    margin: 0px 30px 43px 30px;
-    width: 2.7vh;
-    height: 2.7vh;
+    margin: 0px 20px 43px 20px;
+    width: 5vh;
+    height: 5vh;
   }
   .footer-copywrite {
   	height: 17px;

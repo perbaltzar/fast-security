@@ -7,7 +7,7 @@
       <h2 class="nav-contact nav-item"><?=$lines['contact']?></h2>
       <h2 class="nav-newsletter nav-item go-to-bottom"><?=$lines['newsletter']?></h2>
       <h2 class="nav-brochure nav-item">
-        <a href="downloads/catalogue.txt" download>
+        <a href="downloads/brochure.pdf" download>
           <?=$lines['brochure']?>
         </a>
       </h2>

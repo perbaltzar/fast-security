@@ -22,9 +22,13 @@
         </button>
       </form>
     </div>
-    <button class="brochure" type="button" name="button">
+
+    <a href="downloads/brochure.pdf" download>
+    <button class="brochure" name="button">
       <?=strtoupper($lines['download'])?>
     </button>
+  </a>
+
   </div>
   <div class="footer-logo">
     <img src="att/logo/logotyp-smallcaps.svg">
@@ -37,7 +41,7 @@
       <?=strtoupper($lines['newsletter'])?>
     </div>
     <div class="footer-brochure line-left footer-button">
-      <?=strtoupper($lines['brochure'])?>
+      <a href="/downloads/brochure.pdf" download><?=strtoupper($lines['brochure'])?></a>
     </div>
     <div class="footer-about line-left footer-button">
       <?=strtoupper($lines['about'])?>
