@@ -13,13 +13,13 @@ if (isset($_GET['locale'])){
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="main-style.css">
-  <link rel="stylesheet" href="style-mobile.css">
-  <link rel="stylesheet" href="actions.css">
-  <link rel="stylesheet" href="sticky-navbar.css">
-  <link rel="stylesheet" href="drop-down.css">
-  <link rel="stylesheet" href="modal.css">
-  <link rel="stylesheet" href="modal-mobile.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/style-mobile.css">
+  <link rel="stylesheet" href="css/actions.css">
+  <link rel="stylesheet" href="css/sticky-navbar.css">
+  <link rel="stylesheet" href="css/drop-down.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/modal-mobile.css">
   <title><?=$lines['fastsecurity']?></title>
 
 </head>
