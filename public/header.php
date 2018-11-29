@@ -16,15 +16,15 @@
         <?php
         if (isset($_GET['locale'])){
           if ($locale === 'sv'){ ?>
-            <button type="submit" name="locale" value="en"><?=strtoupper($lines['english'])?></button>
+            <button class="lang-button" type="submit" name="locale" value="en"><?=$lines['english'];?></button>
           <?php
           }else{
           ?>
-            <button type="submit" name="locale" value="sv"><?=strtoupper($lines['swedish'])?></button>
+            <button class="lang-button" type="submit" name="locale" value="sv"><?=$lines['swedish'];?></button>
           <?php
           }
         }else{?>
-        <button type="submit" name="locale" value="sv"><?=strtoupper($lines['swedish'])?></button>
+        <button class="lang-button" type="submit" name="locale" value="sv"><?=$lines['swedish'];?></button>
       <?php
       }
       ?>

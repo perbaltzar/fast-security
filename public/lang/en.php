@@ -27,5 +27,9 @@ $lines =  [
   'noticed' => "We noticed you've been here before",
   'official' => "Let's make things offical!",
   'fastsecurity' => 'Fast Security 1.0',
-  'email' => 'E-Mail'
+  'email' => 'E-Mail',
+  'interior' => 'Interior',
+  'interior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future',
+  'exterior' => 'Exterior',
+  'exterior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future'
 ];

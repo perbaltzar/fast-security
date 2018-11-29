@@ -26,7 +26,7 @@ if (isset($_GET['locale'])){
 <body>
   <!--NAVBAR-->
   <?php
-    require (__DIR__.'/header.php');
+  require (__DIR__.'/header.php');
   ?>
 
   <!--DROP IN-->
@@ -37,11 +37,11 @@ if (isset($_GET['locale'])){
     <div class="drop-down-newsletter drop-down-item go-to-bottom">
       <?=strtoupper($lines['newsletter'])?>
     </div>
-      <a href="downloads/catalogue.txt" download>
-        <div class="drop-down-brochure drop-down-item">
-          <?=strtoupper($lines['brochure'])?>
-        </div>
-      </a>
+    <a href="downloads/catalogue.txt" download>
+      <div class="drop-down-brochure drop-down-item">
+        <?=strtoupper($lines['brochure'])?>
+      </div>
+    </a>
     <div class="drop-down-about drop-down-item">
       <?=strtoupper($lines['about'])?>
     </div>
@@ -60,26 +60,26 @@ if (isset($_GET['locale'])){
   <!-- STICKY NAVBAR FURTHER DOWN-->
   <div class="navbar-further-down">
     <div class="navbar-further-down-logo">
-        <img src="att/logo/logotyp-header.svg">
+      <img src="att/logo/logotyp-header.svg">
     </div>
     <div class="navbar-further-down-buttons">
-        <button class="navbar-further-down-button go-to-bottom"><?=strtoupper($lines['latest'])?></button>
+      <button class="navbar-further-down-button go-to-bottom"><?=strtoupper($lines['latest'])?></button>
     </div>
   </div>
   <!--MODAL POPUP-->
   <div class="modal-container">
-  <?php
-  /////////////////////////////////////
-  //Checking if user been here before//
-  /////////////////////////////////////
-  if (isset($_COOKIE['hasVisit'])){
-    if (!isset($_COOKIE['hasSignUp'])){
-      require(__DIR__.'/modal.php');
+    <?php
+    /////////////////////////////////////
+    //Checking if user been here before//
+    /////////////////////////////////////
+    if (isset($_COOKIE['hasVisit'])){
+      if (!isset($_COOKIE['hasSignUp'])){
+        require(__DIR__.'/modal.php');
+      }
+    }else{
+      setcookie("hasVisit", '1' ,time()+60*60*24*365);
     }
-  }else{
-    setcookie("hasVisit", '1' ,time()+60*60*24*365);
-  }
-  ?>
+    ?>
   </div>
   <!--FIRST HERO -->
   <div class="hero first-hero">
@@ -90,53 +90,60 @@ if (isset($_GET['locale'])){
   </div>
   <!--BETWEEN DIV-->
   <div class="between-div">
-    <p><?=$lines['hero1paragraph']?></p>
+    <p class="first-between-div-p"><?=$lines['hero1paragraph']?></p>
     <h5><?=$lines['hero1headline']?></h5>
-    <p><?=$lines['hero1paragraph2']?></p>
+    <p class="first-between-div-p-2"><?=$lines['hero1paragraph2']?></p>
 
   </div>
   <!--SLIDER SECOND HERO-->
   <div class="hero second-hero slider">
     <!-- <section>
-      <img src="pictures/tunnel-woman.jpg">
-    </section>
-    <section>
-      <img src="pictures/dark-studio-front.jpg">
-    </section> -->
-  </div>
-  <!--DOUBLE PICTURE GRID-->
-  <div class="grid-pictures">
-    <div class="grid-image grid-image-top">
+    <img src="pictures/tunnel-woman.jpg">
+  </section>
+  <section>
+  <img src="pictures/dark-studio-front.jpg">
+</section> -->
+</div>
+<!--DOUBLE PICTURE GRID-->
+<div class="grid-pictures">
+  <div class="grid-image grid-image-top">
 
-    </div>
-    <div class="grid-text grid-image-text-top">
-        <h5>Exterior</h5>
-        <p>Many people still think Saab makes cars, and that is correct. We are on the go for the future</p>
-        <div class="grid-text-button">
-          <button type="button" name="button">READ MORE</button>
-        </div>
-    </div>
-    <div class="grid-text grid-image-text-middle">
-      <h5>Interior</h5>
-      <p>Many people still think Saab makes cars, and that is correct. We are on the go for the future.</p>
+  </div>
+  <div class="grid-text grid-image-text-top">
+    <div class="grid-holder">
+      <h5><?=$lines['exterior']?></h5>
+      <p><?=$lines['exterior-text']?></p>
       <div class="grid-text-button">
         <button type="button" name="button">READ MORE</button>
       </div>
     </div>
-    <div class="grid-image grid-image-middle">
-
+  </div>
+  <div class="grid-text grid-image-text-middle">
+    <div class="grid-holder">
+      <h5><?=$lines['interior']?></h5>
+      <p><?=$lines['interior-text']?></p>
+      <div class="grid-text-button">
+        <button type="button" name="button">READ MORE</button>
+      </div>
     </div>
-    <div class="grid-image grid-image-bottom">
+  </div>
+  <div class="grid-image grid-image-middle">
 
-    </div>
   </div>
-  <!--BETWEEN DIV-->
-  <div class="between-div">
-    <p><?=$lines['history']?>
-    </p>
+  <div class="grid-image grid-image-bottom">
+
   </div>
-  <!--THIRD HERO-->
-  <div class="hero third-hero">
-  </div>
+</div>
+<!--BETWEEN DIV-->
+<div class="between-div">
+  <p class="second-between-div-p"><?=$lines['history']?>
+  </p>
+</div>
+<!--THIRD HERO-->
+<div class="hero third-hero">
+</div>
+<!--FOURTH HERO-->
+<div class="hero third-hero">
+</div>
 <?php
 require (__DIR__.'/footer.php');
