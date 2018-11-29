@@ -114,7 +114,7 @@
   }
   .between-div h5{
   	height: 13vh;
-  	width: 88vw;
+  	width: 84vw;
   	font-family: AktivGrotesk-Bold;
   	font-size: 7vh;
   	letter-spacing: 1.42px;
@@ -138,7 +138,7 @@
   .third-between{
     height: 100vh;
   }
-  #history{
+  .between-div p{
     font-size: 2.8vh;
     letter-spacing: 2.7px;
     width: 84vw;
@@ -186,6 +186,11 @@
   }
   .grid-text-button{
     margin-bottom: 5vh;
+  }
+  .grid-text-button button{
+    height: 3.5vh;
+    width: 24vw;
+    font-size: 1.6vh;
   }
   /***************/
   /*FOOTER DESIGN*/

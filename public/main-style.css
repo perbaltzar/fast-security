@@ -20,10 +20,10 @@ a{
   background-image: url('pictures/studio-front-blue.png');
 }
 .third-hero{
-  background-image: url('pictures/honeycomb.png');
+  background-image: url('pictures/curve.png');
 }
 .fourth-hero{
-  background-image: url('pictures/curve.png');
+  background-image: url('pictures/honeycomb.png');
 }
 .hero{
   height: 100vh;
@@ -38,13 +38,16 @@ a{
 .hero-headline{
   /* width: 60vw; */
   font-family: "AktivGrotesk-Bold";
+  padding-top: 27vh;
+  padding-left: 8vw;
+  line-height: 34px;
+  /* text-shadow: 0px 0px 15px grey; */
+}
+.hero-headline h5{
+  font-family: AktivGrotesk-Bold;
   font-size: 106px;
   letter-spacing: 0.18px;
   line-height: 34px;
-  text-shadow: 0px 0px 15px grey;
-}
-.hero-headline h5{
-
 }
 .hero-headline p{
   margin-top: 53px;
@@ -133,6 +136,9 @@ body{
   color: #A4A4A4;
   cursor: pointer;
 }
+.nav-item button{
+  margin-left: 4vw;
+}
 .nav-item{
   /* padding-top: 12px; */
   font-size: 22px;
@@ -148,7 +154,7 @@ body{
   display:none;
 }
 .between-div{
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,6 +170,7 @@ body{
   width: 50vw;
 } */
 .first-between-div-p{
+  margin-top: 15vh;
   margin-bottom: 4vh;
 	font-family: AktivGrotesk-Light;
 	font-size: 3vh;
@@ -181,6 +188,7 @@ body{
 	text-align: center;
   width: 50vw;
 }
+
 .between-div h5{
 	height: 20vh;
 	width: 46vw;
@@ -196,7 +204,7 @@ body{
   font-family: AktivGrotesk-Light;
   font-size: 3vh;
   letter-spacing: 2.21px;
-  line-height: 32px;
+  line-height: 45px;
   text-align: left;
   width: 62vw;
   font-weight: 300;

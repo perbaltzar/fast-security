@@ -1,4 +1,7 @@
 /*MODAL DESIGN FOR DESKTOP*/
+.newsletter-modal{
+  width: 30vw;
+}
 .modal-container{
   width: 100vw;
   height: 50vh;
@@ -44,21 +47,28 @@
   margin-bottom: 4vh;
 }
 .newsletter-modal p{
+  width: 100%;
   font-size: 3vh;
   margin-bottom: .5vh;
   text-align: center;
 }
+.inputfield-modal-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 .input-modal{
-  height: 3vh;
-  width: 20vw;
+  height: 3.2vh;
+  width: 80%;
   background-color: transparent;
   border: 1px solid white;
   font-size: 2.3vh;
   padding: 0.3vh;
 }
 .button-modal{
-  width: 60px;
-  height: 3.7vh;
+  width: 20%;
+  height: 4vh;
   border: 0px;
   background-color: #00205a;
   border: 1px solid white;
@@ -77,8 +87,7 @@
   width: 2vw;
   margin: 0px;
 }
-.inputfield-modal-form{
-  display: flex;
-  justify-content: center;
-  width: 55vw;
+.latest-news{
+  width: 18.8vw;
+  border-bottom: 1px solid white;
 }

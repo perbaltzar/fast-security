@@ -120,7 +120,7 @@ if (isset($_GET['locale'])){
       <h5><?=$lines['interior']?></h5>
       <p><?=$lines['interior-text']?></p>
       <div class="grid-text-button">
-        <button type="button" name="button">READ MORE</button>
+        <button type="button" name="button"><?=$lines['read-more'];?></button>
       </div>
     </div>
   </div>
@@ -129,7 +129,7 @@ if (isset($_GET['locale'])){
       <h5><?=$lines['gear']?></h5>
       <p><?=$lines['gear-text']?></p>
       <div class="grid-text-button">
-        <button type="button" name="button">READ MORE</button>
+        <button type="button" name="button"><?=$lines['read-more'];?></button>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@ if (isset($_GET['locale'])){
 </div>
 <!--BETWEEN DIV-->
 <div class="between-div third-between">
-  <p class="second-between-div-p" id="history"><?=$lines['history']?>
+  <p class="second-between-div-p"><?=$lines['history']?>
   </p>
 </div>
 <!--THIRD HERO-->

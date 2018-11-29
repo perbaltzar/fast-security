@@ -15,16 +15,15 @@
     text-align: center;
   }
   .modal h5{
-    width: 80%;
+    width: 70%;
     text-align: center;
   }
   .newsletter-modal{
-    width: 80%;
+    width: 72%;
   }
   .newsletter-modal p{
     width: 100%;
-    font-size: 2.5vh;
-    /* line-height: 23px; */
+    font-size: 5vw;
     margin-bottom: .5vh;
     text-align: center;
     letter-spacing: 2.46px;
@@ -49,5 +48,8 @@
     display: flex;
     justify-content: center;
     width: 55vw;
+  }
+  .latest-news{
+    border-bottom: 1px solid white;
   }
 }
