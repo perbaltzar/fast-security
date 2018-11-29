@@ -9,7 +9,8 @@ const sticky_disappear = document.querySelector('.footer')
 const go_to_bottoms = document.querySelectorAll('.go-to-bottom');
 const dropdown_newsletter = document.querySelector('.drop-down-newsletter');
 const fade_in = document.querySelector('.first-hero');
-
+//Arrow Button
+const arrow = document.querySelector('.arrow-down')
 fade_in.classList.add('fade-in')
 
 ///////////////////////////////
@@ -19,6 +20,7 @@ burger.addEventListener('click', ()=> {
   drop_in.classList.toggle('drop-in-active');
   burger.classList.toggle('burger-animation');
 });
+
 /////////////////
 //Sticky NAVBAR//
 /////////////////
@@ -29,8 +31,6 @@ window.addEventListener('scroll', () => {
     sticky.classList.remove("navbar-visible");
   }
 });
-
-
 
 /////////////////
 //  The modal  //
@@ -44,7 +44,6 @@ if (open_the_modal){
   const open_modal = () => {
     modal.style.display = 'flex';
   }
-
   //Close the Modal//
   close.addEventListener('click', () =>{
     modal.style.display = 'none';
@@ -65,3 +64,11 @@ Array.from(go_to_bottoms).forEach((go_to_bottom) =>{
     });
   });
 })
+////////////////
+//ARROW BUTTON//
+////////////////
+arrow.addEventListener('click', () => {
+  document.querySelector('.between-div').scrollIntoView({
+    behavior: 'smooth'
+  });
+});

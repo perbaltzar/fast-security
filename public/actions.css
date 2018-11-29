@@ -23,3 +23,37 @@
   transition: all .9s ease;
 
 }
+.jumping{
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/*JUMPING ARROW*/
+@keyframes bounce {
+  0%{
+    transform: translateY(00px);
+    animation-timing-function: ease;
+  }
+  10%{
+    transform: translateY(-15px);
+    animation-timing-function: ease-in;
+
+  }
+  20%{
+    transform: translateY(00px);
+    animation-timing-function: ease;
+  }
+  30%{
+    transform: translateY(-15px);
+    animation-timing-function: ease-in;
+
+  }
+  40%{
+    transform: translateY(0px);
+    animation-timing-function: ease-in;
+  }
+  100%{
+    transform: translateY(00px);
+  }
+
+}

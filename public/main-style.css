@@ -36,12 +36,10 @@ a{
   background-position: center;
 }
 .hero-headline{
-  /* width: 60vw; */
   font-family: "AktivGrotesk-Bold";
   padding-top: 27vh;
-  padding-left: 8vw;
+  padding-left: 0vw;
   line-height: 34px;
-  /* text-shadow: 0px 0px 15px grey; */
 }
 .hero-headline h5{
   font-family: AktivGrotesk-Bold;
@@ -168,7 +166,7 @@ body{
 	font-family: AktivGrotesk-Light;
 	font-size: 3vh;
 	letter-spacing: 2.21px;
-	line-height: 32px;
+	line-height: 45px;
 	text-align: center;
   width: 35vw;
 }
@@ -177,7 +175,7 @@ body{
 	font-family: AktivGrotesk-Light;
 	font-size: 3vh;
 	letter-spacing: 2.21px;
-	line-height: 32px;
+	line-height: 45px;
 	text-align: center;
   width: 50vw;
 }
@@ -190,7 +188,7 @@ body{
 	letter-spacing: 0.82px;
 	/* line-height: 77px; */
 	text-align: center;
-  margin-bottom: 0vh;
+  margin-bottom: 4vh;
 }
 .second-between-div-p{
   margin-bottom: 4vh;
@@ -202,25 +200,7 @@ body{
   width: 62vw;
   font-weight: 300;
 }
-/*SLIDER*/
-/*VARFÖR FUNKAR DEN INTE!!!! */
-/* .slider {
-    font-family: sans-serif;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100vw);
-    scroll-snap-type: x mandatory;
-    display: flex;
-    overflow-x: scroll;
-}
-section {
-    border-right: 1px solid white;
-    padding: 1rem;
-    min-width: 100vw;
-    height: 100vh;''
-    scroll-snap-align: start;
-    text-align: center;
-    position: relative;
-} */
+
 /********************/
 /*GRID IMAGES DESIGN*/
 /********************/
@@ -242,9 +222,6 @@ section {
   width: 100%;
 
 }
-/* .grid-image-middle{
-  grid-row: 2;
-} */
 .grid-holder{
   width: 70%;
   height: 50%;
@@ -257,14 +234,17 @@ section {
 }
 .grid-text p{
   text-align: left;
-  width: 70%;
+  width: 90%;
 	height: 96px;
 	color: #FFFFFF;
-	font-size: 22px;
 	font-weight: 300;
-	letter-spacing: 2.21px;
 	line-height: 32px;
   padding-bottom: 3vh;
+  margin-bottom: 4vh;
+  font-family: AktivGrotesk-Light;
+  font-size: 3vh;
+  letter-spacing: 2.21px;
+  line-height: 45px;
 }
 .grid-text h5{
 	height: 50px;
@@ -290,7 +270,7 @@ section {
 	text-align: center;
 	height: 42px;
 	width: 234px;
-  margin-top: 3vh;
+  margin-top: 2vh;
   background-color: transparent;
 }
 .grid-text-button button:hover{
@@ -316,7 +296,6 @@ section {
 /********************/
 .footer{
   height: 100vh;
-  /* border: 1px white solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +313,6 @@ section {
 .footer-newsletter-button svg{
   width: 1.6vw;
 }
-
 .footer-newsletter-brochure p{
  margin-bottom: 8px;
  font-size: 28px;
@@ -361,8 +339,6 @@ section {
   border: 1px solid white;
   padding-left: 0.4vh;
 }
-
-
 .footer-newsletter-button{
   width: 61px;
   height: 37px;
@@ -400,7 +376,7 @@ section {
   justify-content: center;
 }
 .footer-button{
-  padding:   0px 40px;
+  padding: 0px 40px;
   border-left: 1px solid white;
 }
 .footer-button:hover{

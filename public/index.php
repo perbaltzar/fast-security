@@ -90,7 +90,7 @@ if (isset($_GET['locale'])){
       <h5><?=$lines['headline']?></h5>
       <p><?=strtoupper($lines['fastsecurity'])?></p>
     </div>
-    <div class="arrow-down">
+    <div class="arrow-down jumping">
       <img src="att/arrow-dropdown.svg" alt="">
     </div>
   </div>

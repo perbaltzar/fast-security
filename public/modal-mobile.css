@@ -6,14 +6,12 @@
   .modal-container{
     top: 20vh;
     height: 60vh;
+    text-align: center;
   }
   .modal{
     width: 90vw;
   }
-  .modal p{
-    text-align: center;
-  }
-  .modal h5{
+  .modal-headline{
     width: 70%;
     text-align: center;
   }
@@ -28,8 +26,8 @@
     height: 4.1vh;
   }
   .modal-button img{
-    height: 3vh;
-    width: 60%;
+    height: 2vh;
+    width: 45%;
     margin: 0px;
   }
   .modal-inputfield-form{
@@ -43,10 +41,12 @@
     margin-bottom: 2vh;
     text-align: center;
     letter-spacing: 2.46px;
-    font-size: 3.5vh;
+    font-size: 3.4vh;
   }
-
   .modal-input{
     width: 80%;
+  }
+  .modal-notice{
+    width: 70%;
   }
 }
