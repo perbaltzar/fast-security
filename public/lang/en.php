@@ -31,5 +31,7 @@ $lines =  [
   'interior' => 'Interior',
   'interior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future',
   'exterior' => 'Exterior',
-  'exterior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future'
+  'exterior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future',
+  'gear' => 'Gear',
+  'gear-text' => 'Check out our massive selection of motorcycle gear and riding apparel at our online shop.'
 ];

@@ -81,6 +81,9 @@ if (isset($_GET['locale'])){
     }
     ?>
   </div>
+  <div class="margin-top">
+
+  </div>
   <!--FIRST HERO -->
   <div class="hero first-hero">
     <div class="hero-headline">
@@ -114,8 +117,8 @@ if (isset($_GET['locale'])){
   </div>
   <div class="grid-text grid-image-text-top">
     <div class="grid-holder">
-      <h5><?=$lines['exterior']?></h5>
-      <p><?=$lines['exterior-text']?></p>
+      <h5><?=$lines['interior']?></h5>
+      <p><?=$lines['interior-text']?></p>
       <div class="grid-text-button">
         <button type="button" name="button">READ MORE</button>
       </div>
@@ -123,8 +126,8 @@ if (isset($_GET['locale'])){
   </div>
   <div class="grid-text grid-image-text-middle">
     <div class="grid-holder">
-      <h5><?=$lines['interior']?></h5>
-      <p><?=$lines['interior-text']?></p>
+      <h5><?=$lines['gear']?></h5>
+      <p><?=$lines['gear-text']?></p>
       <div class="grid-text-button">
         <button type="button" name="button">READ MORE</button>
       </div>
@@ -146,7 +149,7 @@ if (isset($_GET['locale'])){
 <div class="hero third-hero">
 </div>
 <!--FOURTH HERO-->
-<div class="hero third-hero">
+<div class="hero fourth-hero">
 </div>
 <?php
 require (__DIR__.'/footer.php');

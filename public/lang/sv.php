@@ -30,7 +30,9 @@ $lines =  [
   'fastsecurity' => 'Fast Security 1.0',
   'email' => 'E-Post',
   'interior' => 'Interiör',
-  'interior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future',
+  'interior-text' => 'Många tror att Saab gör bilar, och det stämmer. Vi är på väg mot framtiden.',
   'exterior' => 'Exteriör',
-  'exterior-text' => 'Many people still think Saab makes cars, and that is correct. We are on the go for the future'
+  'exterior-text' => 'Många tror att Saab gör bilar, och det stämmer. Vi är på väg mot framtiden.',
+  'gear' => 'Tillbehör',
+  'gear-text' => 'Checka in vårt massiva utbud av motocykelutrustning och åkkläder i vår online shop.'
 ];
