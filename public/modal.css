@@ -1,7 +1,4 @@
 /*MODAL DESIGN FOR DESKTOP*/
-.newsletter-modal{
-  width: 30vw;
-}
 .modal-container{
   width: 100vw;
   height: 50vh;
@@ -15,9 +12,8 @@
 }
 .close{
   height: 5vh;
-  width: 2vh;
+  width: 3vh;
   align-self: flex-end;
-  justify-self: start;
   margin: 0 34px 0 0;
 }
 .close svg{
@@ -36,40 +32,37 @@
   align-items: center;
   flex-flow: column;
 }
-.modal p{
-  font-size: 3.3vh;
-  font-family: "AktivGrotesk-Regular";
-  margin-bottom: 1.5vh;
-}
+
 .modal h5{
   font-size: 4.5vh;
   font-family: "AktivGrotesk-Bold";
   margin-bottom: 4vh;
 }
-.newsletter-modal p{
-  width: 100%;
-  font-size: 3vh;
-  margin-bottom: .5vh;
-  text-align: center;
+.modal-newsletter{
+  width: 25vw;
 }
-.inputfield-modal-form{
+.modal-notice{
+  text-align: center;
+  font-size: 3.3vh;
+  font-family: "AktivGrotesk-Regular";
+  margin-bottom: 1.5vh;
+}
+.modal-inputfield-form{
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  align-items: center;
 }
-.input-modal{
-  height: 3.2vh;
+.modal-input{
+  height: 4vh;
   width: 80%;
   background-color: transparent;
   border: 1px solid white;
   font-size: 2.3vh;
-  padding: 0.3vh;
+  padding-left: .3vw;
 }
-.button-modal{
+.modal-button{
   width: 20%;
-  height: 4vh;
-  border: 0px;
+  height: 4.2vh;
   background-color: #00205a;
   border: 1px solid white;
   border-left: 0px;
@@ -82,12 +75,20 @@
   width: 8vh;
   margin-bottom: 3vh;
 }
-.button-modal img{
+.modal-button img{
   height: 1vh;
   width: 2vw;
   margin: 0px;
 }
-.latest-news{
-  width: 18.8vw;
+.modal-latest-news{
+  font-size: 1vh;
   border-bottom: 1px solid white;
+  width: 25vw;
+  font-size: 2.7vh;
+  margin-bottom: 2vh;
+  text-align:center;
+}
+.modal-button:hover{
+  cursor: pointer;
+  background-color: #1f4896;
 }

@@ -11,45 +11,42 @@
     width: 90vw;
   }
   .modal p{
-    width: 70%;
     text-align: center;
   }
   .modal h5{
     width: 70%;
     text-align: center;
   }
-  .newsletter-modal{
-    width: 72%;
+  .modal-newsletter{
+    width: 80%;
   }
-  .newsletter-modal p{
-    width: 100%;
-    font-size: 5vw;
-    margin-bottom: .5vh;
-    text-align: center;
-    letter-spacing: 2.46px;
+  .modal-inputfield{
+    height: 4vh;
   }
-  .input-modal{
-    height: 3vh;
-    width: 55vw;
-    background-color: transparent;
-    border: 1px solid white;
-    font-size: 2vh;
+  .modal-button{
+    width: 20%;
+    height: 4.1vh;
   }
-  .button-modal{
-    width: 5vh;
-    height: 3.7vh;
-  }
-  .button-modal img{
+  .modal-button img{
     height: 3vh;
     width: 60%;
     margin: 0px;
   }
-  .inputfield-modal-form{
+  .modal-inputfield-form{
     display: flex;
     justify-content: center;
-    width: 55vw;
+    width: 100%;
   }
-  .latest-news{
+  .modal-latest-news{
     border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 2vh;
+    text-align: center;
+    letter-spacing: 2.46px;
+    font-size: 3.5vh;
+  }
+
+  .modal-input{
+    width: 80%;
   }
 }

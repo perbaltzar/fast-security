@@ -8,9 +8,9 @@ const sticky_disappear = document.querySelector('.footer')
 //Sticky navbar button
 const go_to_bottoms = document.querySelectorAll('.go-to-bottom');
 const dropdown_newsletter = document.querySelector('.drop-down-newsletter');
+const fade_in = document.querySelector('.first-hero');
 
-
-
+fade_in.classList.add('fade-in')
 
 ///////////////////////////////
 //Activate the drop down menu//

@@ -86,6 +86,7 @@ body{
   display: grid;
   grid-template-rows: 2vh 1fr;
   grid-template-columns: 70px 200px 2fr 5fr 60px;
+  z-index: 50;
 }
 .navbar-logo{
   width: 200px;
@@ -160,15 +161,7 @@ body{
   justify-content: center;
   flex-flow: column;
 }
-/* .between-div p{
-  margin-bottom: 4vh;
-	font-family: AktivGrotesk-Light;
-	font-size: 3vh;
-	letter-spacing: 2.21px;
-	line-height: 32px;
-	text-align: center;
-  width: 50vw;
-} */
+
 .first-between-div-p{
   margin-top: 15vh;
   margin-bottom: 4vh;
@@ -332,34 +325,34 @@ section {
   font-size: 26px;
   letter-spacing: 2.11px;
 }
-.newsletter-brochure{
+.footer-newsletter-brochure{
   width: 350px;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.newsletter svg{
+.footer-newsletter-button svg{
   width: 1.6vw;
 }
 
-.newsletter-brochure p{
+.footer-newsletter-brochure p{
  margin-bottom: 8px;
  font-size: 28px;
  text-align: center;
  width: 100%;
  border-bottom: 1px solid white;
 }
-.inputfield{
+.footer-inputfield{
   margin: 25px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.inputfield form{
+.footer-inputfield form{
   width: 350px;
 }
-.newsletter-brochure input{
+.footer-newsletter-brochure input{
   width: 284px;
   height: 35px;
   background-color: transparent;
@@ -369,16 +362,16 @@ section {
   padding-left: 0.4vh;
 }
 
-.newsletter{
+
+.footer-newsletter-button{
   width: 61px;
   height: 37px;
-  border: 0px;
   background-color: #00205a;
   border: 1px solid white;
   border-left: 0px;
 }
 
-.brochure{
+.footer-brochure-button{
   background: transparent;
   height: 35px;
   width: 350px;
@@ -388,11 +381,11 @@ section {
   text-align: center;
   letter-spacing: 1.96px;
 }
-.brochure:hover{
+.footer-brochure-button:hover{
   background-color: #00205a;
   cursor: pointer;
 }
-.newsletter:hover{
+.footer-newsletter-:hover{
   cursor: pointer;
   background-color: #1f4896;
 }

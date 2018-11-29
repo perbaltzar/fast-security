@@ -99,7 +99,7 @@
     width: 8vw;
   }
   .arrow-down{
-    padding-top: 92vh;
+    padding-top: 80vh;
   }
   /********************/
   /*BETWEEN DIV DESIGN*/
@@ -140,8 +140,12 @@
   }
   .between-div p{
     font-size: 2.8vh;
-    letter-spacing: 2.7px;
+    letter-spacing: 3px;
+    line-height: 5vh;
     width: 84vw;
+  }
+  .between-div{
+    height: 80vh;
   }
 
 
@@ -198,10 +202,10 @@
   .line-left{
     border: none;
   }
-  .newsletter-brochure{
+  .footer-newsletter-brochure{
     width: 70vw;
   }
-  .newsletter-brochure p{
+  .footer-newsletter-brochure p{
     margin-bottom: 8px;
     letter-spacing: 0.3vh;
     font-size: 2.8vh;
@@ -215,38 +219,38 @@
     height: 25vh;
     margin-bottom: 3vh;
   }
-  .newsletter-brochure form{
+  .footer-newsletter-brochure form{
     width: 70vw;
   }
-  .newsletter-brochure input{
+  .footer-newsletter-brochure input{
     width: 60vw;
     height: 4vh;
     font-size: 2vh;
     padding-left: 0.4vh;
   }
-  .newsletter{
+  .footer-newsletter-button{
     width: 9vw;
     height: 4.08vh;
     /* transform: translate(-0.8vw, -0.15vh); */
   }
-  .inputfield{
+  .footer-inputfield{
     height: 4vh;
     margin-bottom: 3vh;
   }
-  .inputfield form{
+  .footer-inputfield form{
     height: 4vh;
     width: 70vw;
   }
-  .email-input{
+  .footer-email-input{
     height: 6vh;
   }
-  .brochure{
+  .footer-brochure-button{
     height: 4vh;
     width: 70vw;
     font-size: 1.8vh;
     letter-spacing: 1.07px;
   }
-  .newsletter svg{
+  .footer-newsletter-button svg{
     width: 5vw;
   }
   .footer-buttons{

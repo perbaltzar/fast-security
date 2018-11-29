@@ -13,3 +13,13 @@
   transform-origin: top left;
   transform: rotate(-45deg) translate(-2px, 2px);
 }
+/*FADE IN FIRST HERO*/
+.first-hero{
+  opacity: 0;
+  background-color: black;
+}
+.fade-in{
+  opacity: 1;
+  transition: all .9s ease;
+
+}

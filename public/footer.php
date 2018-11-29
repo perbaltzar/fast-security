@@ -1,11 +1,11 @@
 <!--FOOTER-->
 <div class="footer">
-  <div class="newsletter-brochure">
+  <div class="footer-newsletter-brochure">
     <p><?=strtoupper($lines['latest'])?></p>
-    <div class="inputfield">
+    <div class="footer-inputfield">
       <form action="signup.php" method="post">
-        <input class="email-input" type="email" name="email" value="" placeholder="<?=$lines['email']?>">
-        <button class="newsletter" type="submit">
+        <input class="footer-email-input" type="email" name="email" value="" placeholder="<?=$lines['email']?>">
+        <button class="footer-newsletter-button" type="submit">
         <svg viewBox="0 0 24 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
               <title>Arrow</title>
@@ -24,7 +24,7 @@
     </div>
 
     <a href="downloads/brochure.pdf" download>
-    <button class="brochure" name="button">
+    <button class="footer-brochure-button" name="button">
       <?=strtoupper($lines['download'])?>
     </button>
   </a>

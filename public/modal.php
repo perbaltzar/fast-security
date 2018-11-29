@@ -19,14 +19,14 @@
     </svg>
   </div>
   <img src="att/mail-icon.svg">
-  <p><?=$lines['noticed']?></p>
-  <h5><?=$lines['official']?></h5>
-  <div class="newsletter-modal">
-    <p class="latest-news"><?=strtoupper($lines['latest'])?></p>
-    <div class="inputfield">
-      <form class="inputfield-modal-form" action="signup.php" method="post">
-        <input class="input-modal" type="email" name="" value="" placeholder="<?=$lines['email']?>">
-        <button class="button-modal" type="submit" name="button">
+  <p class="modal-notice"><?=$lines['noticed']?></p>
+  <h5 class="modal-headline"><?=$lines['official']?></h5>
+  <div class="modal-newsletter">
+    <p class="modal-latest-news"><?=strtoupper($lines['latest'])?></p>
+    <div class="modal-inputfield">
+      <form class="modal-inputfield-form" action="signup.php" method="post">
+        <input class="modal-input" type="email" name="" value="" placeholder="<?=$lines['email']?>">
+        <button class="modal-button" type="submit" name="button">
           <img src="att/button-arrow.svg">
         </button>
       </form>
