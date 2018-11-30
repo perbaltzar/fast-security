@@ -166,12 +166,13 @@
     height: 30vh;
   }
   .grid-text{
-    height: 30vh;
+    height: 40vh;
     grid-column: 1;
+    font-size: 2.8vh;
   }
   .grid-holder{
-    padding-top: 7vh;
-    height: 60%;
+    /* padding-top: 7vh; */
+    height: 80%;
   }
   .grid-holder h5{
     width: 33vw;
@@ -179,9 +180,12 @@
   }
   .grid-holder p{
     width: 70vw;
-    font-size: 2.4vh;
-    line-height: 2.9vh;
+    font-size: 2.8vh;
+    line-height: 5vh;
     letter-spacing: 2.5px;
+    height: 20vh;
+    padding: 0px;
+    margin: 0px;
   }
   .grid-image-middle{
     grid-row: 3;

@@ -17,8 +17,7 @@ $lines =  [
   'hero1headline' => "Du är unik. \n FastSecurity, FS.1.0",
   'hero1paragraph' => "Många tror att Saab gör bilar, och det stämmer.",
   'hero1headline' => "Vi är på väg mot framtiden.",
-  'hero1paragraph2' => "Saab is very much alive and well, as one of the world’s most innovative companies.
-                        And now we are proud to present our car for the future: FastSecurity, FS.",
+  'hero1paragraph2' => "Saab lever och frodas, som ett av världens mest innovativa företag, och nu presenterar vi stolt får framtidsbil: FastSecurity, FS.",
   'history' => "Saab grundades 1937 i Trollhättan, Sverige,
                 som en flygplanskonstruktör för att fixa flygplan till Svenska Försvaret,
                 precis när Europa låg i starten till ett nytt krig.
