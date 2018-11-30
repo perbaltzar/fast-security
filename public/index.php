@@ -13,7 +13,7 @@ if (isset($_GET['locale'])){
 <html lang="<?=$lines['lang'];?>" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/style-desktop.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style-mobile.css">
