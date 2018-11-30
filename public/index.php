@@ -15,6 +15,7 @@ if (isset($_GET['locale'])){
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style-mobile.css">
   <link rel="stylesheet" href="css/actions.css">
   <link rel="stylesheet" href="css/sticky-navbar.css">

@@ -1,6 +1,5 @@
 
 *{
-  /* border: 2px solid white; */
   margin: 0px;
   padding: 0px;
   color: white;
@@ -100,7 +99,6 @@ body{
 	font-family: AktivGrotesk-Bold;
 	font-size: 7vh;
 	letter-spacing: 0.82px;
-	/* line-height: 77px; */
 	text-align: center;
   margin-bottom: 4vh;
 }
@@ -204,127 +202,3 @@ body{
   grid-column: 1 / 3;
   background-image: url('../pictures/studio-back-blue.png');
 }
-
-/********************/
-/*   FOOTER DESIGN  */
-/********************/
-.footer{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  font-family: AktivGrotesk-Light;
-  font-size: 26px;
-  letter-spacing: 2.11px;
-}
-.footer-newsletter-brochure{
-  width: 350px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-.footer-newsletter-button svg{
-  width: 1.6vw;
-}
-.footer-newsletter-brochure p{
- margin-bottom: 8px;
- font-size: 28px;
- text-align: center;
- width: 100%;
- border-bottom: 1px solid white;
-}
-.footer-inputfield{
-  margin: 25px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.footer-inputfield form{
-  width: 350px;
-}
-.footer-newsletter-brochure input{
-  width: 284px;
-  height: 35px;
-  background-color: transparent;
-  font-size: 20px;
-  font-family: AktivGrotesk-Light;
-  border: 1px solid white;
-  padding-left: 0.4vh;
-}
-.footer-newsletter-button{
-  width: 61px;
-  height: 37px;
-  background-color: #00205a;
-  border: 1px solid white;
-  border-left: 0px;
-}
-
-.footer-brochure-button{
-  background: transparent;
-  height: 35px;
-  width: 350px;
-  font-size: 20px;
-  font-family: AktivGrotesk-Light;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 1.96px;
-}
-.footer-brochure-button:hover{
-  background-color: #00205a;
-  cursor: pointer;
-}
-.footer-newsletter-:hover{
-  cursor: pointer;
-  background-color: #1f4896;
-}
-.footer-logo img{
-  margin-top: 104px;
-  margin-bottom: 50px;
-  height: 20vh;
-  width: 20vh;
-}
-.footer-buttons{
-  display: flex;
-  justify-content: center;
-}
-.footer-button{
-  padding: 0px 40px;
-  border-left: 1px solid white;
-}
-.footer-button:hover{
-  cursor: pointer;
-}
-.footer-line{
-  width: 980px;
-  margin-top: 47px;
-
-}
-.social-media{
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-}
-.social-media img{
-  margin: 0px 30px 43px 30px;
-}
-.social-media img:hover{
-  cursor: pointer;
-}
-.footer-copywrite {
-	height: 17px;
-	width: 180px;
-	font-family: AktivGrotesk-Light;
-	font-size: 16px;
-	letter-spacing: 1.73px;
-	line-height: 18px;
-}
-  .footer-contact{
-    border: 0px;
-  }
-  form{
-    display: flex;
-  }
-
-/* height: 31px;	width: 338px;	color: #FFFFFF;				line-height: 30px;	text-align: center; */
