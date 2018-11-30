@@ -1,6 +1,7 @@
 <?php
 //All the english frases
 $lines =  [
+  'lang' => 'en',
   'headline' => 'Join the future',
   'newsletter' => 'Newsletter',
   'catalogue' => 'Catalogue',
@@ -10,6 +11,8 @@ $lines =  [
   'newsletter' => 'Newsletter',
   'english' => 'EN',
   'swedish' => 'SV',
+  'sv-mobile' => 'Svenska',
+  'en-mobile' => 'English',
   'hero1headline' => "You are special. \n FastSecurity, FS.1.0",
   'hero1paragraph' => "Many people still think Saab makes cars, and that is correct.",
   'hero1headline' => "We are on the go for the future.",

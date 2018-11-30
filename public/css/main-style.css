@@ -54,6 +54,9 @@ a{
   width: 60vw;
   text-align: left;
 }
+.arrow-down{
+  display: none;
+}
 body{
   scroll-snap-type: x mandatory;
   border: 2px dashed transparent;

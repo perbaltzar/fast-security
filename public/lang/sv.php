@@ -2,6 +2,7 @@
 //all swedish frases
 
 $lines =  [
+  'lang' => 'sv',
   'headline' => 'Häng med framåt',
   'newsletter' => 'Nyhetsbrev',
   'catalogue' => 'Katalog',
@@ -11,6 +12,8 @@ $lines =  [
   'newsletter' => 'Nyhetsbrev',
   'english' => 'EN',
   'swedish' => 'SV',
+  'sv-mobile' => 'Svenska',
+  'en-mobile' => 'English',
   'hero1headline' => "Du är unik. \n FastSecurity, FS.1.0",
   'hero1paragraph' => "Många tror att Saab gör bilar, och det stämmer.",
   'hero1headline' => "Vi är på väg mot framtiden.",

@@ -10,7 +10,7 @@ if (isset($_GET['locale'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="<?=$lines['lang'];?>" dir="ltr">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main-style.css">
@@ -30,42 +30,9 @@ if (isset($_GET['locale'])){
   ?>
 
   <!--DROP IN-->
-  <div class="drop-in">
-    <div class="drop-down-contact drop-down-item">
-      <?=strtoupper($lines['contact'])?>
-    </div>
-    <div class="drop-down-newsletter drop-down-item go-to-bottom">
-      <?=strtoupper($lines['newsletter'])?>
-    </div>
-    <a href="downloads/brochure.pdf" download>
-      <div class="drop-down-brochure drop-down-item">
-        <?=strtoupper($lines['brochure'])?>
-      </div>
-    </a>
-    <div class="drop-down-about drop-down-item">
-      <?=strtoupper($lines['about'])?>
-    </div>
-    <div class="lang-buttons">
-      <form method="get">
-        <button type="submit" name="locale" value="en"><?=strtoupper($lines['english'])?></button>
-        <button type="submit" name="locale" value="sv"><?=strtoupper($lines['swedish'])?></button>
-      </form>
-    </div>
-    <div class="drop-down-social">
-      <img src="att/facebook-icon.svg">
-      <img src="att/linkedin-icon.svg">
-      <img src="att/twitter-icon.svg">
-    </div>
-  </div>
+    <?php require(__DIR__.'/burger-menu.php'); ?>
   <!-- STICKY NAVBAR FURTHER DOWN-->
-  <div class="navbar-further-down">
-    <div class="navbar-further-down-logo">
-      <img src="att/logo/logotyp-header.svg">
-    </div>
-    <div class="navbar-further-down-buttons">
-      <button class="navbar-further-down-button go-to-bottom"><?=strtoupper($lines['latest'])?></button>
-    </div>
-  </div>
+    <?php require(__DIR__.'/sticky-navbar.php'); ?>
   <!--MODAL POPUP-->
   <div class="modal-container">
     <?php

@@ -3,7 +3,7 @@
     width: 100vw;
   }
   /****************/
-  /* NAVBAR DESGIN*/
+  /* NAVBAR DESIGN*/
   /****************/
   .burger-container{
     grid-column: 8;
@@ -99,6 +99,7 @@
     width: 8vw;
   }
   .arrow-down{
+    display: block;
     padding-top: 80vh;
   }
   /********************/
